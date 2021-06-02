@@ -1,0 +1,49 @@
+@mixin menu {
+  margin: 4%;
+  padding: 10px;
+  position: relative;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.1);
+  &:hover .description {
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    width: 180px;
+  }
+  &:hover .check {
+    transform: translateX(0%);
+  }
+  &:hover .fa-check-circle {
+    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+  }
+
+  .fa-check-circle {
+    transition: all 0.5s ease;
+  }
+  p {
+    display: inline-block;
+  }
+  h3 {
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-size: 17px;
+  }
+}
+.description {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 250px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.price {
+  margin-left: 50px;
+  overflow: hidden;
+  font-weight: bold;
+}

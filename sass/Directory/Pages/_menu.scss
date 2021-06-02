@@ -1,0 +1,18 @@
+.check {
+  background-color: $Green;
+  padding: 0 25px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+}
+.menuLine {
+  @include menu;
+}

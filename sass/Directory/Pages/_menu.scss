@@ -12,6 +12,10 @@
   font-size: 26px;
   transform: translateX(100%);
   transition: all 0.5s ease;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
 }
 .menuLine {
   @include menu;

@@ -79,6 +79,10 @@ footer .logoText {
   font-size: 26px;
   transform: translateX(100%);
   transition: all 0.5s ease;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
 }
 
 .menuLine {
@@ -129,14 +133,11 @@ body {
 }
 
 .MenuSection {
-  border-radius: 25px 25px 0 0;
   padding-bottom: 50px;
-  -webkit-border-radius: 25px 25px 0 0;
-  -moz-border-radius: 25px 25px 0 0;
-  -ms-border-radius: 25px 25px 0 0;
-  -o-border-radius: 25px 25px 0 0;
-  h1-padding-left: 20px;
-  h1-font-style: italic;
+}
+.MenuSection h1 {
+  padding-left: 20px;
+  font-style: italic;
 }
 .MenuSection h2 {
   font-size: 16px;
@@ -148,19 +149,24 @@ body {
 .MenuSection .TitleSection {
   padding-right: 40%;
 }
+.MenuSection .emptyHeart {
+  position: absolute;
+  top: 335px;
+  right: 48px;
+}
+.MenuSection .emptyHeart:hover {
+  display: none;
+}
 .MenuSection .fullHeart {
   position: absolute;
   top: 335px;
   right: 48px;
-  display: none;
+  color: rgba(138, 43, 226, 0);
 }
 .MenuSection .fullHeart:hover {
-  color: #9b669c;
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
+  color: blueviolet;
+  display: initial;
+  color: blueviolet;
 }
 .MenuSection .MenuImg {
   width: 100%;

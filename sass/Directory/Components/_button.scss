@@ -1,14 +1,21 @@
 .btn-order {
   a {
-    margin: 23%;
     text-decoration: none;
     color: white;
     padding: 20px 50px 20px 50px;
     border-radius: 40px;
-    background-color: rgb(155, 102, 156);
+    background: rgb(135, 58, 170);
+    background: linear-gradient(
+      90deg,
+      rgba(135, 58, 170, 1) 0%,
+      rgba(167, 56, 165, 0.6365896700477065) 52%
+    );
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
     -ms-border-radius: 40px;
     -o-border-radius: 40px;
+  }
+  p {
+    text-align: center;
   }
 }

@@ -8,6 +8,12 @@
 
 body {
   font-family: helvetica, sans-serif;
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
 }
 
 .mainContainer {
@@ -19,10 +25,18 @@ body {
 }
 .MenuSection {
   padding-bottom: 50px;
-
+  border-radius: 35px;
+  margin-top: -18%;
+  background-color: white;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
   h1 {
-    padding-left: 20px;
+    padding-left: 6%;
+    padding-top: 8%;
     font-style: italic;
+    display: flex;
   }
   h2 {
     font-size: 16px;
@@ -32,27 +46,29 @@ body {
     margin-left: 6%;
   }
   .TitleSection {
-    padding-right: 40%;
+    display: flex;
+    font-family: "Shrikhand-Regular";
   }
   .emptyHeart {
     position: absolute;
-    top: 335px;
-    right: 48px;
-
+    right: 11%;
     &:hover {
       display: none;
     }
   }
   .fullHeart {
+    color: rgba($color: rgb(135, 58, 170), $alpha: 0);
     position: absolute;
-    top: 335px;
-    right: 48px;
-    color: rgba($color: blueviolet, $alpha: 0);
+    right: 11%;
 
     &:hover {
-      color: blueviolet;
+      color: rgb(135, 58, 170);
+      color: linear-gradient(
+        90deg,
+        rgba(135, 58, 170, 1) 0%,
+        rgba(167, 56, 165, 0.6365896700477065) 52%
+      );
       display: initial;
-      color: rgba($color: blueviolet, $alpha: 1);
     }
   }
 

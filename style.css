@@ -40,8 +40,84 @@
   opacity: 1;
 }
 
+.headerIndex {
+  width: 100%;
+}
+.headerIndex .logoIndex {
+  width: 60%;
+  margin-left: 18%;
+}
+.headerIndex .HeaderText {
+  text-align: center;
+  background-color: #f2f2f2;
+  margin-left: 0%;
+  margin-right: 0%;
+  height: 300px;
+}
+.headerIndex .HeaderText h1 {
+  font-size: 24px;
+  margin: 5%;
+}
+.headerIndex .HeaderText p {
+  margin-bottom: 10%;
+  padding-top: 4%;
+}
+.headerIndex .HeaderText .topHeaderText {
+  background-color: #e0dede;
+  padding-bottom: 7px;
+}
+.headerIndex .HeaderText .BtnIndex {
+  text-decoration: none;
+  color: white;
+  border-radius: 40px;
+  background: #873aaa;
+  background: linear-gradient(90deg, #873aaa 0%, rgba(167, 56, 165, 0.63658967) 52%);
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  text-align: center;
+  padding: 20px 15px 20px 15px;
+  margin-right: 25%;
+  margin-left: 25%;
+  font-size: 13px;
+}
+
+.navIndex ul {
+  padding-left: 0%;
+}
+.navIndex ul li {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 25px;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.navIndex ul li .NumberNav {
+  font-weight: bold;
+  background-color: blueviolet;
+  color: white;
+  padding: 3px 6px 2px 6px;
+  margin-left: -8%;
+  margin-right: 5%;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.navIndex ul li a {
+  color: black;
+  font-weight: bold;
+  padding-left: 10%;
+}
+
 footer {
-  margin-top: 60px;
   background-color: #444444;
 }
 footer ul {
@@ -66,7 +142,6 @@ footer .logoText {
 .btn-order a {
   text-decoration: none;
   color: white;
-  padding: 20px 50px 20px 50px;
   border-radius: 40px;
   background: #873aaa;
   background: linear-gradient(90deg, #873aaa 0%, rgba(167, 56, 165, 0.63658967) 52%);
@@ -74,6 +149,7 @@ footer .logoText {
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
+  padding: 20px 50px 20px 50px;
 }
 .btn-order p {
   text-align: center;
@@ -146,6 +222,14 @@ body ul {
   list-style: none;
 }
 
+.MainMenu {
+  padding-bottom: 25px;
+}
+
+.mainContainer {
+  padding-bottom: 2%;
+  margin-bottom: -6%;
+}
 .mainContainer img {
   width: 100%;
   height: 300px;
@@ -200,6 +284,82 @@ body ul {
   width: 100%;
   height: 200px;
   object-fit: cover;
+}
+
+.mainContainer {
+  background-color: #f2f2f2;
+}
+.mainContainer h2 {
+  padding-top: 13%;
+  padding-left: 6%;
+  padding-bottom: 3%;
+}
+.mainContainer .Content {
+  margin: 6%;
+}
+.mainContainer .Content img {
+  width: 100%;
+  height: 150px;
+  -webkit-border-radius: 15px 15px 0px 0px;
+  -moz-border-radius: 25px 25px 0px 0px;
+  -ms-border-radius: 25px 25px 0px 0px;
+  -o-border-radius: 25px 25px 0px 0px;
+}
+.mainContainer .Content figcaption {
+  background-color: white;
+  color: black;
+  border-radius: 0px 0px 15px 15px;
+  -webkit-border-radius: 0px 0px 15px 15px;
+  -moz-border-radius: 0px 0px 15px 15px;
+  -ms-border-radius: 0px 0px 15px 15px;
+  -o-border-radius: 0px 0px 15px 15px;
+  padding-left: 5%;
+}
+.mainContainer .Content figcaption h3 {
+  margin-top: -2%;
+  padding-top: 4%;
+  margin-bottom: 0%;
+}
+.mainContainer .Content figcaption p {
+  padding-bottom: 4%;
+  margin-top: 1%;
+}
+
+.navIndex ul {
+  padding-left: 0%;
+}
+.navIndex ul li {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 25px;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.navIndex ul li:hover {
+  background-color: blueviolet;
+}
+.navIndex ul li .NumberNav {
+  font-weight: bold;
+  background-color: blueviolet;
+  color: white;
+  padding: 3px 6px 2px 6px;
+  margin-left: -8%;
+  margin-right: 5%;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.navIndex ul li a {
+  color: black;
+  font-weight: bold;
+  padding-left: 10%;
 }
 
 /*# sourceMappingURL=style.css.map */

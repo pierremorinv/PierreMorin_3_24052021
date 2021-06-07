@@ -24,3 +24,77 @@
     opacity: 1;
   }
 }
+.headerIndex {
+  width: 100%;
+
+  .logoIndex {
+    width: 60%;
+    margin-left: 18%;
+  }
+  .HeaderText {
+    text-align: center;
+    background-color: #f2f2f2;
+    margin-left: 0%;
+    margin-right: 0%;
+
+    height: 300px;
+    h1 {
+      font-size: 24px;
+      margin: 5%;
+    }
+    p {
+      margin-bottom: 10%;
+      padding-top: 4%;
+    }
+    .topHeaderText {
+      background-color: rgb(224, 222, 222);
+      padding-bottom: 7px;
+    }
+    .BtnIndex {
+      @include btn;
+      text-align: center;
+      padding: 20px 15px 20px 15px;
+      margin-right: 25%;
+      margin-left: 25%;
+      font-size: 13px;
+    }
+  }
+}
+.navIndex {
+  ul {
+    padding-left: 0%;
+
+    li {
+      background-color: #f2f2f2;
+      padding: 20px;
+
+      border-radius: 25px;
+      margin-top: 5%;
+      margin-left: 2%;
+      margin-right: 2%;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+
+      .NumberNav {
+        font-weight: bold;
+        background-color: blueviolet;
+        color: white;
+        padding: 3px 6px 2px 6px;
+        margin-left: -8%;
+        margin-right: 5%;
+        border-radius: 25px;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        -ms-border-radius: 25px;
+        -o-border-radius: 25px;
+      }
+      a {
+        color: black;
+        font-weight: bold;
+        padding-left: 10%;
+      }
+    }
+  }
+}

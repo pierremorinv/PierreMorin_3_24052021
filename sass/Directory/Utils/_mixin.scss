@@ -6,6 +6,7 @@
   overflow: hidden;
   box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.1);
   &:hover .description {
+    border-radius: 25px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;

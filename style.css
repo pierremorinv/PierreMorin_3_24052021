@@ -231,6 +231,7 @@ footer .logoText {
   margin-top: -2%;
   padding-top: 4%;
   margin-bottom: 0%;
+  font-size: 16px;
 }
 .mainContainer .Content .textContent p {
   margin-top: 0%;
@@ -253,6 +254,9 @@ footer .logoText {
 }
 .navIndex ul li:hover {
   background-color: blueviolet;
+}
+.navIndex ul li h2 {
+  margin-left: 3%;
 }
 .navIndex ul li .NumberNav {
   font-weight: bold;
@@ -303,29 +307,38 @@ footer .logoText {
   display: flex;
   font-family: "Shrikhand-Regular";
 }
-.MainMenu .MenuSection .emptyHeart {
-  position: absolute;
-  right: 11%;
-}
-.MainMenu .MenuSection .emptyHeart:hover {
-  display: none;
-}
-.MainMenu .MenuSection .fullHeart {
-  color: rgba(135, 58, 170, 0);
-  position: absolute;
-  right: 11%;
-}
-.MainMenu .MenuSection .fullHeart:hover {
-  color: #873aaa;
-  display: initial;
-}
-.MainMenu .MenuSection .MenuImg {
+.MainMenu .MenuImg {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
 
-.menu1 {
+.emptyHeart {
+  position: absolute;
+  right: 13%;
+  top: 49%;
+  transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  -o-transform: scale(1.25);
+}
+.emptyHeart:hover {
+  display: none;
+}
+
+.fullHeart {
+  color: rgba(135, 58, 170, 0);
+  position: absolute;
+  right: 13%;
+  top: 49%;
+  transform: scale(1.25);
+}
+.fullHeart:hover {
+  color: #873aaa;
+  display: initial;
+}
+.fullHeart .menu1 {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1.5s;
@@ -333,7 +346,6 @@ footer .logoText {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -350,7 +362,7 @@ footer .logoText {
     opacity: 1;
   }
 }
-.menu2 {
+.fullHeart .menu2 {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 3s;
@@ -358,7 +370,6 @@ footer .logoText {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -375,7 +386,7 @@ footer .logoText {
     opacity: 1;
   }
 }
-.menu3 {
+.fullHeart .menu3 {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 4.5s;
@@ -383,7 +394,6 @@ footer .logoText {
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -400,6 +410,7 @@ footer .logoText {
     opacity: 1;
   }
 }
+
 body {
   font-family: helvetica, sans-serif;
 }

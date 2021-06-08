@@ -4,7 +4,6 @@
   background-color: #f2f2f2;
   img {
     width: 100%;
-
     object-fit: cover;
   }
   h2 {
@@ -37,6 +36,7 @@
         margin-top: -2%;
         padding-top: 4%;
         margin-bottom: 0%;
+        font-size: 16px;
       }
       p {
         margin-top: 0%;
@@ -62,6 +62,9 @@
       -o-border-radius: 25px;
       &:hover {
         background-color: blueviolet;
+      }
+      h2 {
+        margin-left: 3%;
       }
 
       .NumberNav {

@@ -53,14 +53,55 @@
   text-decoration: none;
   color: white;
   border-radius: 40px;
-  background: rgb(135, 58, 170);
+  background: rgb(255, 121, 218);
   background: linear-gradient(
-    90deg,
-    rgba(135, 58, 170, 1) 0%,
-    rgba(167, 56, 165, 0.6365896700477065) 52%
+    156deg,
+    rgba(255, 121, 218, 1) 0%,
+    rgba(147, 86, 220, 1) 100%
   );
+  &:hover {
+    background: rgb(255, 121, 218);
+    background: linear-gradient(
+      156deg,
+      rgba(255, 121, 218, 0.7) 0%,
+      rgba(147, 86, 220, 0.7) 100%
+    );
+  }
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
+}
+
+@mixin heartIndex {
+  display: flex;
+
+  .emptyHeartI {
+    transform: scale(1.3);
+    position: relative;
+    bottom: 8px;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+  }
+  .fullHeartI {
+    transform: scale(1.3);
+    opacity: (0);
+    position: relative;
+    bottom: 8px;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    &:hover {
+      opacity: 1.2;
+      background: rgb(255, 121, 218);
+      background: linear-gradient(
+        156deg,
+        rgba(255, 121, 218, 1) 0%,
+        rgba(147, 86, 220, 1) 100%
+      );
+    }
+  }
 }

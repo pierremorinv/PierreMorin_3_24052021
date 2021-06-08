@@ -38,11 +38,6 @@
   background-size: cover;
 }
 
-.menu1:hover {
-  transition-delay: 1s;
-  opacity: 1;
-}
-
 .headerIndex {
   width: 100%;
 }
@@ -70,12 +65,15 @@
   background: linear-gradient(0deg, #dcdadd 93%, rgba(131, 130, 131, 0.64) 100%);
   padding-bottom: 7px;
 }
+.headerIndex .HeaderText .topHeaderText .marginHeaderText {
+  font-weight: bold;
+}
 .headerIndex .HeaderText .BtnIndex {
   text-decoration: none;
   color: white;
   border-radius: 40px;
-  background: #873aaa;
-  background: linear-gradient(90deg, #873aaa 0%, rgba(167, 56, 165, 0.63658967) 52%);
+  background: #ff79da;
+  background: linear-gradient(156deg, #ff79da 0%, #9356dc 100%);
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
@@ -86,9 +84,12 @@
   margin-left: 25%;
   font-size: 13px;
 }
-
+.headerIndex .HeaderText .BtnIndex:hover {
+  background: #ff79da;
+  background: linear-gradient(156deg, rgba(255, 121, 218, 0.7) 0%, rgba(147, 86, 220, 0.7) 100%);
+}
 footer {
-  background-color: #444444;
+  background-color: #2c2b2b;
 }
 footer ul {
   list-style-type: none;
@@ -114,20 +115,24 @@ footer .logoText {
   text-decoration: none;
   color: white;
   border-radius: 40px;
-  background: #873aaa;
-  background: linear-gradient(90deg, #873aaa 0%, rgba(167, 56, 165, 0.63658967) 52%);
+  background: #ff79da;
+  background: linear-gradient(156deg, #ff79da 0%, #9356dc 100%);
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
   padding: 20px 50px 20px 50px;
 }
+.btn-order a:hover {
+  background: #ff79da;
+  background: linear-gradient(156deg, rgba(255, 121, 218, 0.7) 0%, rgba(147, 86, 220, 0.7) 100%);
+}
 .btn-order p {
   text-align: center;
 }
 
 .check {
-  background-color: #a9e0d1;
+  background-color: #99e2d0;
   padding: 0 25px;
   height: 100%;
   position: absolute;
@@ -186,7 +191,14 @@ footer .logoText {
 }
 
 .mainContainer {
+  padding-bottom: 2%;
+  margin-bottom: -6%;
   background-color: #f2f2f2;
+}
+.mainContainer img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
 .mainContainer h2 {
   padding-top: 13%;
@@ -221,7 +233,6 @@ footer .logoText {
   margin-bottom: 0%;
 }
 .mainContainer .Content figcaption p {
-  padding-bottom: 4%;
   margin-top: 0%;
 }
 
@@ -262,6 +273,134 @@ footer .logoText {
   padding-left: 10%;
 }
 
+.MainMenu {
+  padding-bottom: 25px;
+}
+.MainMenu .MenuSection {
+  padding-bottom: 50px;
+  border-radius: 35px;
+  margin-top: -18%;
+  background-color: white;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -ms-border-radius: 35px;
+  -o-border-radius: 35px;
+}
+.MainMenu .MenuSection h1 {
+  padding-left: 6%;
+  padding-top: 8%;
+  font-style: italic;
+  display: flex;
+}
+.MainMenu .MenuSection h2 {
+  font-size: 16px;
+  border-bottom: 3px solid #99e2d0;
+  padding-bottom: 10px;
+  margin-right: 80%;
+  margin-left: 6%;
+}
+.MainMenu .MenuSection .TitleSection {
+  display: flex;
+  font-family: "Shrikhand-Regular";
+}
+.MainMenu .MenuSection .emptyHeart {
+  position: absolute;
+  right: 11%;
+}
+.MainMenu .MenuSection .emptyHeart:hover {
+  display: none;
+}
+.MainMenu .MenuSection .fullHeart {
+  color: rgba(135, 58, 170, 0);
+  position: absolute;
+  right: 11%;
+}
+.MainMenu .MenuSection .fullHeart:hover {
+  color: #873aaa;
+  color: linear-gradient(43deg, #873aaa 10%, rgba(167, 56, 165, 0.63658967) 52%);
+  display: initial;
+}
+.MainMenu .MenuSection .MenuImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu1 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu2 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu3 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 4.5s;
+  animation-duration: 4.5;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 body {
   font-family: helvetica, sans-serif;
 }
@@ -272,68 +411,140 @@ body ul {
   list-style: none;
 }
 
-.MainMenu {
-  padding-bottom: 25px;
-}
-
-.mainContainer {
-  padding-bottom: 2%;
-  margin-bottom: -6%;
-}
-.mainContainer img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
-
-.MenuSection {
-  padding-bottom: 50px;
-  border-radius: 35px;
-  margin-top: -18%;
-  background-color: white;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  -ms-border-radius: 35px;
-  -o-border-radius: 35px;
-}
-.MenuSection h1 {
-  padding-left: 6%;
-  padding-top: 8%;
-  font-style: italic;
+.heartIndex1 {
   display: flex;
 }
-.MenuSection h2 {
-  font-size: 16px;
-  border-bottom: 3px solid #a9e0d1;
-  padding-bottom: 10px;
-  margin-right: 80%;
-  margin-left: 6%;
+.heartIndex1 .emptyHeartI {
+  transform: scale(1.3);
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
 }
-.MenuSection .TitleSection {
+.heartIndex1 .fullHeartI {
+  transform: scale(1.3);
+  opacity: 0;
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.heartIndex1 .fullHeartI:hover {
+  opacity: 1.2;
+  background: #ff79da;
+  background: linear-gradient(156deg, #ff79da 0%, #9356dc 100%);
+}
+.heartIndex1 .emptyHeartI {
+  left: 160px;
+}
+.heartIndex1 .fullHeartI {
+  left: 144px;
+}
+
+.heartIndex2 {
   display: flex;
-  font-family: "Shrikhand-Regular";
 }
-.MenuSection .emptyHeart {
-  position: absolute;
-  right: 11%;
+.heartIndex2 .emptyHeartI {
+  transform: scale(1.3);
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
 }
-.MenuSection .emptyHeart:hover {
-  display: none;
+.heartIndex2 .fullHeartI {
+  transform: scale(1.3);
+  opacity: 0;
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
 }
-.MenuSection .fullHeart {
-  color: rgba(135, 58, 170, 0);
-  position: absolute;
-  right: 11%;
+.heartIndex2 .fullHeartI:hover {
+  opacity: 1.2;
+  background: #ff79da;
+  background: linear-gradient(156deg, #ff79da 0%, #9356dc 100%);
 }
-.MenuSection .fullHeart:hover {
-  color: #873aaa;
-  color: linear-gradient(43deg, #873aaa 10%, rgba(167, 56, 165, 0.63658967) 52%);
-  display: initial;
+.heartIndex2 .emptyHeartI {
+  left: 184px;
 }
-.MenuSection .MenuImg {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+.heartIndex2 .fullHeartI {
+  left: 168px;
+}
+
+.heartIndex3 {
+  display: flex;
+}
+.heartIndex3 .emptyHeartI {
+  transform: scale(1.3);
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.heartIndex3 .fullHeartI {
+  transform: scale(1.3);
+  opacity: 0;
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.heartIndex3 .fullHeartI:hover {
+  opacity: 1.2;
+  background: #ff79da;
+  background: linear-gradient(156deg, #ff79da 0%, #9356dc 100%);
+}
+.heartIndex3 .emptyHeartI {
+  left: 173px;
+}
+.heartIndex3 .fullHeartI {
+  left: 157px;
+}
+
+.heartIndex4 {
+  display: flex;
+}
+.heartIndex4 .emptyHeartI {
+  transform: scale(1.3);
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.heartIndex4 .fullHeartI {
+  transform: scale(1.3);
+  opacity: 0;
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.heartIndex4 .fullHeartI:hover {
+  opacity: 1.2;
+  background: #ff79da;
+  background: linear-gradient(156deg, #ff79da 0%, #9356dc 100%);
+}
+.heartIndex4 .emptyHeartI {
+  left: 146px;
+}
+.heartIndex4 .fullHeartI {
+  left: 130px;
 }
 
 /*# sourceMappingURL=style.css.map */

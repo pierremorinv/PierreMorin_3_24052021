@@ -1,0 +1,131 @@
+.MainMenu {
+  padding-bottom: 25px;
+
+  .MenuSection {
+    padding-bottom: 50px;
+    border-radius: 35px;
+    margin-top: -18%;
+    background-color: white;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    h1 {
+      padding-left: 6%;
+      padding-top: 8%;
+      font-style: italic;
+      display: flex;
+    }
+    h2 {
+      font-size: 16px;
+      border-bottom: 3px solid $Green;
+      padding-bottom: 10px;
+      margin-right: 80%;
+      margin-left: 6%;
+    }
+    .TitleSection {
+      display: flex;
+      font-family: "Shrikhand-Regular";
+    }
+    .emptyHeart {
+      position: absolute;
+      right: 11%;
+      &:hover {
+        display: none;
+      }
+    }
+    .fullHeart {
+      color: rgba($color: rgb(135, 58, 170), $alpha: 0);
+      position: absolute;
+      right: 11%;
+
+      &:hover {
+        color: rgb(135, 58, 170);
+        color: linear-gradient(
+          43deg,
+          rgba(135, 58, 170, 1) 10%,
+          rgba(167, 56, 165, 0.6365896700477065) 52%
+        );
+        display: initial;
+      }
+    }
+
+    .MenuImg {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+  }
+}
+.menu1 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu2 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu3 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 4.5s;
+  animation-duration: 4.5;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

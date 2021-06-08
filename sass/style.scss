@@ -6,6 +6,7 @@
 @import "./Directory/Components/button";
 @import "./Directory/Pages/menu";
 @import "./Directory/Pages/main-index";
+@import "./Directory/Pages/main-menu";
 
 body {
   font-family: helvetica, sans-serif;
@@ -16,71 +17,40 @@ body {
     list-style: none;
   }
 }
-.MainMenu {
-  padding-bottom: 25px;
-}
-
-.mainContainer {
-  padding-bottom: 2%;
-  margin-bottom: -6%;
-  img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+.heartIndex1 {
+  @include heartIndex;
+  .emptyHeartI {
+    left: 160px;
+  }
+  .fullHeartI {
+    left: 144px;
   }
 }
-.MenuSection {
-  padding-bottom: 50px;
-  border-radius: 35px;
-  margin-top: -18%;
-  background-color: white;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
-  -ms-border-radius: 35px;
-  -o-border-radius: 35px;
-  h1 {
-    padding-left: 6%;
-    padding-top: 8%;
-    font-style: italic;
-    display: flex;
+.heartIndex2 {
+  @include heartIndex;
+  .emptyHeartI {
+    left: 184px;
   }
-  h2 {
-    font-size: 16px;
-    border-bottom: 3px solid $Green;
-    padding-bottom: 10px;
-    margin-right: 80%;
-    margin-left: 6%;
+  .fullHeartI {
+    left: 168px;
   }
-  .TitleSection {
-    display: flex;
-    font-family: "Shrikhand-Regular";
+}
+.heartIndex3 {
+  @include heartIndex;
+  .emptyHeartI {
+    left: 173px;
   }
-  .emptyHeart {
-    position: absolute;
-    right: 11%;
-    &:hover {
-      display: none;
-    }
+  .fullHeartI {
+    left: 157px;
   }
-  .fullHeart {
-    color: rgba($color: rgb(135, 58, 170), $alpha: 0);
-    position: absolute;
-    right: 11%;
+}
 
-    &:hover {
-      color: rgb(135, 58, 170);
-      color: linear-gradient(
-        43deg,
-        rgba(135, 58, 170, 1) 10%,
-        rgba(167, 56, 165, 0.6365896700477065) 52%
-      );
-      display: initial;
-    }
+.heartIndex4 {
+  @include heartIndex;
+  .emptyHeartI {
+    left: 146px;
   }
-
-  .MenuImg {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+  .fullHeartI {
+    left: 130px;
   }
 }

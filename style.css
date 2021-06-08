@@ -31,11 +31,29 @@
   margin-left: 15px;
   margin-right: 80px;
 }
-.HeaderMenu .MenuImg {
-  background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+.HeaderMenu .MenuImg1 {
   width: 100%;
   height: 250px;
   background-size: cover;
+  background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+}
+.HeaderMenu .MenuImg2 {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-image: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+}
+.HeaderMenu .MenuImg3 {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+}
+.HeaderMenu .MenuImg4 {
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
 }
 
 .headerIndex {
@@ -88,6 +106,7 @@
   background: #ff79da;
   background: linear-gradient(156deg, rgba(255, 121, 218, 0.7) 0%, rgba(147, 86, 220, 0.7) 100%);
 }
+
 footer {
   background-color: #2c2b2b;
 }
@@ -211,6 +230,7 @@ footer .logoText {
 .mainContainer .Content img {
   width: 100%;
   height: 150px;
+  object-fit: cover;
   border-radius: 15px 15px 0 0;
   -webkit-border-radius: 15px 15px 0 0;
   -moz-border-radius: 15px 15px 0 0;
@@ -277,6 +297,81 @@ footer .logoText {
   padding-left: 10%;
 }
 
+.menu1 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu2 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menu3 {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 4.5s;
+  animation-duration: 4.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .MainMenu {
   padding-bottom: 25px;
 }
@@ -307,11 +402,6 @@ footer .logoText {
   display: flex;
   font-family: "Shrikhand-Regular";
 }
-.MainMenu .MenuImg {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-}
 
 .emptyHeart {
   position: absolute;
@@ -337,78 +427,6 @@ footer .logoText {
 .fullHeart:hover {
   color: #873aaa;
   display: initial;
-}
-.fullHeart .menu1 {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.fullHeart .menu2 {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.fullHeart .menu3 {
-  -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
-  -webkit-animation-duration: 4.5s;
-  animation-duration: 4.5s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 body {

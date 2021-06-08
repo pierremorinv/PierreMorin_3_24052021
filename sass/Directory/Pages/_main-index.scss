@@ -4,7 +4,7 @@
   background-color: #f2f2f2;
   img {
     width: 100%;
-    height: 300px;
+
     object-fit: cover;
   }
   h2 {
@@ -24,7 +24,7 @@
       -ms-border-radius: 15px 15px 0 0;
       -o-border-radius: 15px 15px 0 0;
     }
-    figcaption {
+    .textContent {
       background-color: white;
       color: black;
       border-radius: 0px 0px 15px 15px;

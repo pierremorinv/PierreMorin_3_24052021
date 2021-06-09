@@ -102,30 +102,32 @@
       font-family: "Shrikhand-Regular";
     }
   }
-}
-.emptyHeart {
-  position: absolute;
-  right: 13%;
-  top: 49%;
-  transform: scale(1.25);
-
-  -webkit-transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  -ms-transform: scale(1.25);
-  -o-transform: scale(1.25);
-  &:hover {
-    display: none;
+  .emptyHeart {
+    position: absolute;
+    right: 13%;
+    top: 45%;
+    transform: scale(1.35);
+    -webkit-transform: scale(1.35);
+    -moz-transform: scale(1.35);
+    -ms-transform: scale(1.35);
+    -o-transform: scale(1.35);
   }
-}
-.fullHeart {
-  color: rgba($color: rgb(135, 58, 170), $alpha: 0);
-  position: absolute;
-  right: 13%;
-  top: 49%;
-  transform: scale(1.25);
-
-  &:hover {
-    color: rgb(135, 58, 170);
-    display: initial;
+  .fullHeart {
+    position: absolute;
+    opacity: 0;
+    right: 13%;
+    top: 45%;
+    color: #9356dc;
+    background: -webkit-linear-gradient(#9c47fc, #ff79da);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(1.35);
+    -webkit-transform: scale(1.35);
+    -moz-transform: scale(1.35);
+    -ms-transform: scale(1.35);
+    -o-transform: scale(1.35);
+    &:hover {
+      opacity: 1;
+    }
   }
 }

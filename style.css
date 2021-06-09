@@ -91,7 +91,7 @@
   color: white;
   border-radius: 40px;
   background: #ff79da;
-  background: linear-gradient(156deg, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(170deg, #ff79da 30%, #9356dc 100%);
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
@@ -104,7 +104,7 @@
 }
 .headerIndex .HeaderText .BtnIndex:hover {
   background: #ff79da;
-  background: linear-gradient(156deg, rgba(255, 121, 218, 0.7) 0%, rgba(147, 86, 220, 0.7) 100%);
+  background: linear-gradient(127deg, rgba(255, 121, 218, 0.7) 30%, rgba(147, 86, 220, 0.7) 100%);
 }
 
 footer {
@@ -135,7 +135,7 @@ footer .logoText {
   color: white;
   border-radius: 40px;
   background: #ff79da;
-  background: linear-gradient(156deg, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(170deg, #ff79da 30%, #9356dc 100%);
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
@@ -144,7 +144,7 @@ footer .logoText {
 }
 .btn-order a:hover {
   background: #ff79da;
-  background: linear-gradient(156deg, rgba(255, 121, 218, 0.7) 0%, rgba(147, 86, 220, 0.7) 100%);
+  background: linear-gradient(127deg, rgba(255, 121, 218, 0.7) 30%, rgba(147, 86, 220, 0.7) 100%);
 }
 .btn-order p {
   text-align: center;
@@ -274,6 +274,7 @@ footer .logoText {
 }
 .navIndex ul li:hover {
   background-color: blueviolet;
+  opacity: 0.1;
 }
 .navIndex ul li h2 {
   margin-left: 3%;
@@ -295,6 +296,154 @@ footer .logoText {
   color: black;
   font-weight: bold;
   padding-left: 10%;
+}
+
+.heartIndex1 {
+  display: flex;
+}
+.heartIndex1 .emptyHeartI {
+  transform: scale(1.3);
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.heartIndex1 .fullHeartI {
+  transform: scale(1.4);
+  opacity: 0;
+  color: #9356dc;
+  display: block;
+  background: -webkit-linear-gradient(#9c47fc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+}
+.heartIndex1 .fullHeartI:hover {
+  opacity: 1;
+}
+.heartIndex1 .emptyHeartI {
+  left: 160px;
+}
+.heartIndex1 .fullHeartI {
+  left: 144px;
+}
+
+.heartIndex2 {
+  display: flex;
+}
+.heartIndex2 .emptyHeartI {
+  transform: scale(1.3);
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.heartIndex2 .fullHeartI {
+  transform: scale(1.4);
+  opacity: 0;
+  color: #9356dc;
+  display: block;
+  background: -webkit-linear-gradient(#9c47fc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+}
+.heartIndex2 .fullHeartI:hover {
+  opacity: 1;
+}
+.heartIndex2 .emptyHeartI {
+  left: 184px;
+}
+.heartIndex2 .fullHeartI {
+  left: 168px;
+}
+
+.heartIndex3 {
+  display: flex;
+}
+.heartIndex3 .emptyHeartI {
+  transform: scale(1.3);
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.heartIndex3 .fullHeartI {
+  transform: scale(1.4);
+  opacity: 0;
+  color: #9356dc;
+  display: block;
+  background: -webkit-linear-gradient(#9c47fc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+}
+.heartIndex3 .fullHeartI:hover {
+  opacity: 1;
+}
+.heartIndex3 .emptyHeartI {
+  left: 173px;
+}
+.heartIndex3 .fullHeartI {
+  left: 157px;
+}
+
+.heartIndex4 {
+  display: flex;
+}
+.heartIndex4 .emptyHeartI {
+  transform: scale(1.3);
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
+}
+.heartIndex4 .fullHeartI {
+  transform: scale(1.4);
+  opacity: 0;
+  color: #9356dc;
+  display: block;
+  background: -webkit-linear-gradient(#9c47fc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  bottom: 8px;
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+}
+.heartIndex4 .fullHeartI:hover {
+  opacity: 1;
+}
+.heartIndex4 .emptyHeartI {
+  left: 146px;
+}
+.heartIndex4 .fullHeartI {
+  left: 130px;
 }
 
 .menu1 {
@@ -402,31 +551,33 @@ footer .logoText {
   display: flex;
   font-family: "Shrikhand-Regular";
 }
-
-.emptyHeart {
+.MainMenu .emptyHeart {
   position: absolute;
   right: 13%;
-  top: 49%;
-  transform: scale(1.25);
-  -webkit-transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  -ms-transform: scale(1.25);
-  -o-transform: scale(1.25);
+  top: 45%;
+  transform: scale(1.35);
+  -webkit-transform: scale(1.35);
+  -moz-transform: scale(1.35);
+  -ms-transform: scale(1.35);
+  -o-transform: scale(1.35);
 }
-.emptyHeart:hover {
-  display: none;
-}
-
-.fullHeart {
-  color: rgba(135, 58, 170, 0);
+.MainMenu .fullHeart {
   position: absolute;
+  opacity: 0;
   right: 13%;
-  top: 49%;
-  transform: scale(1.25);
+  top: 45%;
+  color: #9356dc;
+  background: -webkit-linear-gradient(#9c47fc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.35);
+  -webkit-transform: scale(1.35);
+  -moz-transform: scale(1.35);
+  -ms-transform: scale(1.35);
+  -o-transform: scale(1.35);
 }
-.fullHeart:hover {
-  color: #873aaa;
-  display: initial;
+.MainMenu .fullHeart:hover {
+  opacity: 1;
 }
 
 body {
@@ -437,142 +588,6 @@ body a {
 }
 body ul {
   list-style: none;
-}
-
-.heartIndex1 {
-  display: flex;
-}
-.heartIndex1 .emptyHeartI {
-  transform: scale(1.3);
-  position: relative;
-  bottom: 8px;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-.heartIndex1 .fullHeartI {
-  transform: scale(1.3);
-  opacity: 0;
-  position: relative;
-  bottom: 8px;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-.heartIndex1 .fullHeartI:hover {
-  opacity: 1.2;
-  background: #ff79da;
-  background: linear-gradient(156deg, #ff79da 0%, #9356dc 100%);
-}
-.heartIndex1 .emptyHeartI {
-  left: 160px;
-}
-.heartIndex1 .fullHeartI {
-  left: 144px;
-}
-
-.heartIndex2 {
-  display: flex;
-}
-.heartIndex2 .emptyHeartI {
-  transform: scale(1.3);
-  position: relative;
-  bottom: 8px;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-.heartIndex2 .fullHeartI {
-  transform: scale(1.3);
-  opacity: 0;
-  position: relative;
-  bottom: 8px;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-.heartIndex2 .fullHeartI:hover {
-  opacity: 1.2;
-  background: #ff79da;
-  background: linear-gradient(156deg, #ff79da 0%, #9356dc 100%);
-}
-.heartIndex2 .emptyHeartI {
-  left: 184px;
-}
-.heartIndex2 .fullHeartI {
-  left: 168px;
-}
-
-.heartIndex3 {
-  display: flex;
-}
-.heartIndex3 .emptyHeartI {
-  transform: scale(1.3);
-  position: relative;
-  bottom: 8px;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-.heartIndex3 .fullHeartI {
-  transform: scale(1.3);
-  opacity: 0;
-  position: relative;
-  bottom: 8px;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-.heartIndex3 .fullHeartI:hover {
-  opacity: 1.2;
-  background: #ff79da;
-  background: linear-gradient(156deg, #ff79da 0%, #9356dc 100%);
-}
-.heartIndex3 .emptyHeartI {
-  left: 173px;
-}
-.heartIndex3 .fullHeartI {
-  left: 157px;
-}
-
-.heartIndex4 {
-  display: flex;
-}
-.heartIndex4 .emptyHeartI {
-  transform: scale(1.3);
-  position: relative;
-  bottom: 8px;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-.heartIndex4 .fullHeartI {
-  transform: scale(1.3);
-  opacity: 0;
-  position: relative;
-  bottom: 8px;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-.heartIndex4 .fullHeartI:hover {
-  opacity: 1.2;
-  background: #ff79da;
-  background: linear-gradient(156deg, #ff79da 0%, #9356dc 100%);
-}
-.heartIndex4 .emptyHeartI {
-  left: 146px;
-}
-.heartIndex4 .fullHeartI {
-  left: 130px;
 }
 
 /*# sourceMappingURL=style.css.map */

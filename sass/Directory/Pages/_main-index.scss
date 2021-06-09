@@ -63,6 +63,7 @@
       -o-border-radius: 25px;
       &:hover {
         background-color: blueviolet;
+        opacity: 0.1;
       }
       h2 {
         margin-left: 3%;
@@ -87,5 +88,42 @@
         padding-left: 10%;
       }
     }
+  }
+}
+.heartIndex1 {
+  @include heartIndex;
+  .emptyHeartI {
+    left: 160px;
+  }
+  .fullHeartI {
+    left: 144px;
+  }
+}
+.heartIndex2 {
+  @include heartIndex;
+  .emptyHeartI {
+    left: 184px;
+  }
+  .fullHeartI {
+    left: 168px;
+  }
+}
+.heartIndex3 {
+  @include heartIndex;
+  .emptyHeartI {
+    left: 173px;
+  }
+  .fullHeartI {
+    left: 157px;
+  }
+}
+
+.heartIndex4 {
+  @include heartIndex;
+  .emptyHeartI {
+    left: 146px;
+  }
+  .fullHeartI {
+    left: 130px;
   }
 }

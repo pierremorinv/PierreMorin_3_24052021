@@ -84,12 +84,6 @@
     -ms-border-radius: 35px;
     -o-border-radius: 35px;
 
-    h1 {
-      padding-left: 6%;
-      padding-top: 8%;
-      font-style: italic;
-      display: flex;
-    }
     h2 {
       font-size: 16px;
       border-bottom: 3px solid $Green;
@@ -98,6 +92,8 @@
       margin-left: 6%;
     }
     .TitleSection {
+      padding-left: 6%;
+      padding-top: 8%;
       display: flex;
       font-family: "Shrikhand-Regular";
     }

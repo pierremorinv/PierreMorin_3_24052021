@@ -263,29 +263,33 @@ footer .logoText {
 
 .navIndex ul {
   padding-left: 0%;
+  padding-bottom: 10%;
 }
 .navIndex ul li {
   background-color: #f2f2f2;
   padding: 20px;
-  border-radius: 25px;
+  -webkit-box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
   margin-top: 5%;
   margin-left: 2%;
   margin-right: 2%;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
 }
 .navIndex ul li:hover {
-  background-color: blueviolet;
-  opacity: 0.1;
+  background-color: rgba(147, 86, 220, 0.2);
+  -webkit-box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.25);
 }
 .navIndex ul li h2 {
   margin-left: 3%;
 }
 .navIndex ul li .NumberNav {
   font-weight: bold;
-  background-color: blueviolet;
+  background-color: #9356dc;
   color: white;
   padding: 3px 6px 2px 6px;
   margin-left: -8%;
@@ -370,10 +374,10 @@ footer .logoText {
   opacity: 1;
 }
 .heartIndex2 .emptyHeartI {
-  left: 184px;
+  left: 189px;
 }
 .heartIndex2 .fullHeartI {
-  left: 168px;
+  left: 173px;
 }
 
 .heartIndex3 {
@@ -407,10 +411,10 @@ footer .logoText {
   opacity: 1;
 }
 .heartIndex3 .emptyHeartI {
-  left: 173px;
+  left: 178px;
 }
 .heartIndex3 .fullHeartI {
-  left: 157px;
+  left: 162px;
 }
 
 .heartIndex4 {
@@ -444,10 +448,10 @@ footer .logoText {
   opacity: 1;
 }
 .heartIndex4 .emptyHeartI {
-  left: 146px;
+  left: 149px;
 }
 .heartIndex4 .fullHeartI {
-  left: 130px;
+  left: 133px;
 }
 
 .menu1 {
@@ -567,7 +571,7 @@ footer .logoText {
   right: 13%;
   top: 45%;
   color: #9356dc;
-  background: -webkit-linear-gradient(#9c47fc, #ff79da);
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transform: scale(1.35);

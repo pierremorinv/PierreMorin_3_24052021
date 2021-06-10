@@ -113,8 +113,8 @@
     opacity: 0;
     right: 13%;
     top: 45%;
-    color: #9356dc;
-    background: -webkit-linear-gradient(#9c47fc, #ff79da);
+    color: $Primary;
+    background: -webkit-linear-gradient($Primary, $Secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.35);

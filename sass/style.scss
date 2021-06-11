@@ -7,6 +7,11 @@
 @import "./Directory/Pages/menu";
 @import "./Directory/Pages/main-index";
 @import "./Directory/Pages/main-menu";
+@mixin desktop {
+  @media screen and (min-width: 600px) {
+    @content;
+  }
+}
 
 body {
   font-family: "Roboto-Regular", sans-serif;

@@ -62,35 +62,37 @@
 
 .headerIndex {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5%;
+  padding-bottom: 8%;
+  background-color: #f2f2f2;
 }
-.headerIndex .logoIndex {
+.headerIndex .header-logo-index {
   width: 60%;
   margin-left: 18%;
 }
-.headerIndex .HeaderText {
+.headerIndex .header-index-text {
   text-align: center;
-  background-color: #f2f2f2;
   margin-left: 0%;
   margin-right: 0%;
-  height: 300px;
 }
-.headerIndex .HeaderText h1 {
+.headerIndex .header-index-text h1 {
   font-size: 24px;
-  margin: 5%;
 }
-.headerIndex .HeaderText p {
-  margin-bottom: 10%;
-  padding-top: 4%;
+.headerIndex .header-index-text p {
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
-.headerIndex .HeaderText .topHeaderText {
+.headerIndex .header-index-text .header-index-top {
   background: #dcdadd;
   background: linear-gradient(0deg, #dcdadd 93%, rgba(131, 130, 131, 0.64) 100%);
   padding-bottom: 7px;
 }
-.headerIndex .HeaderText .topHeaderText .marginHeaderText {
+.headerIndex .header-index-text .header-index-top .marginHeaderText {
   font-weight: bold;
 }
-.headerIndex .HeaderText .BtnIndex {
+.headerIndex .header-index-text .BtnIndex {
   text-decoration: none;
   color: white;
   border-radius: 40px;
@@ -102,11 +104,9 @@
   -o-border-radius: 40px;
   text-align: center;
   padding: 20px 15px 20px 15px;
-  margin-right: 25%;
-  margin-left: 25%;
   font-size: 13px;
 }
-.headerIndex .HeaderText .BtnIndex:hover {
+.headerIndex .header-index-text .BtnIndex:hover {
   background: #ff79da;
   background: linear-gradient(127deg, rgba(255, 121, 218, 0.7) 30%, rgba(147, 86, 220, 0.7) 100%);
 }
@@ -214,24 +214,40 @@ footer .logoText {
   font-size: 15px;
 }
 
-.mainContainer {
+.card {
   padding-bottom: 2%;
   margin-bottom: -6%;
   background-color: #f2f2f2;
 }
-.mainContainer img {
+.card img {
   width: 100%;
   object-fit: cover;
 }
-.mainContainer h2 {
+.card h2 {
   padding-top: 13%;
   padding-left: 6%;
   padding-bottom: 3%;
 }
-.mainContainer .Content {
+.card .card-content {
   margin: 6%;
 }
-.mainContainer .Content img {
+.card .card-content:hover {
+  transform: scale(1.02);
+  -moz-transform: scale(1.02);
+  scale: 1.1;
+  -ms-transform: scale(1.02);
+  scale: 1.1;
+  -o-transform: scale(1.02);
+  scale: 1.1;
+  -webkit-transform: scale(1.02);
+  scale: 1.1;
+  transition: transform 500ms ease-in-out;
+  -webkit-transition: transform 500ms ease-in-out;
+  -moz-transition: transform 500ms ease-in-out;
+  -ms-transition: transform 500ms ease-in-out;
+  -o-transition: transform 500ms ease-in-out;
+}
+.card .card-content img {
   width: 100%;
   height: 150px;
   object-fit: cover;
@@ -241,7 +257,7 @@ footer .logoText {
   -ms-border-radius: 15px 15px 0 0;
   -o-border-radius: 15px 15px 0 0;
 }
-.mainContainer .Content .textContent {
+.card .card-content .card-content-text {
   background-color: white;
   color: black;
   border-radius: 0px 0px 15px 15px;
@@ -251,53 +267,62 @@ footer .logoText {
   -o-border-radius: 0px 0px 15px 15px;
   padding-left: 5%;
 }
-.mainContainer .Content .textContent h3 {
+.card .card-content .card-content-text h3 {
   margin-top: -2%;
   padding-top: 4%;
   margin-bottom: 0%;
   font-size: 16px;
 }
-.mainContainer .Content .textContent p {
+.card .card-content .card-content-text p {
   margin-top: 0%;
 }
+.card .card-new {
+  text-align: center;
+  padding: 10px;
+  background-color: #99e2d0;
+  color: white;
+  width: 12%;
+}
 
-.navIndex ul {
+.nav-index ul {
   padding-left: 0%;
   padding-bottom: 10%;
 }
-.navIndex ul li {
+.nav-index ul li {
   background-color: #f2f2f2;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   -webkit-box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.15);
   box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.15);
   border-radius: 18px;
   margin-top: 5%;
   margin-left: 2%;
   margin-right: 2%;
+  padding-left: -1%;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
   -o-border-radius: 18px;
 }
-.navIndex ul li:hover {
+.nav-index ul li:hover {
   background-color: rgba(147, 86, 220, 0.2);
   -webkit-box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.25);
   box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.25);
 }
-.navIndex ul li:hover .fa-mobile-alt,
-.navIndex ul li:hover .fa-list-ul,
-.navIndex ul li:hover .fa-store {
+.nav-index ul li:hover .fa-mobile-alt,
+.nav-index ul li:hover .fa-list-ul,
+.nav-index ul li:hover .fa-store {
   color: #9356dc;
 }
-.navIndex ul li h2 {
+.nav-index ul li h2 {
   margin-left: 3%;
 }
-.navIndex ul li .NumberNav {
+.nav-index ul li .nav-number {
   font-weight: bold;
   background-color: #9356dc;
   color: white;
   padding: 3px 6px 2px 6px;
-  margin-left: -8%;
+  margin-left: -1%;
   margin-right: 5%;
   border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -305,158 +330,36 @@ footer .logoText {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
 }
-.navIndex ul li a {
+.nav-index ul li a {
   color: black;
   font-weight: bold;
   padding-left: 10%;
 }
 
-.heartIndex1 {
+.heartIndex {
   display: flex;
+  justify-content: space-between;
 }
-.heartIndex1 .emptyHeartI {
-  transform: scale(1.3);
-  position: relative;
-  bottom: 8px;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-.heartIndex1 .fullHeartI {
+.heartIndex .fullHeartI {
+  margin-right: 5%;
   transform: scale(1.4);
-  opacity: 0;
-  color: #9356dc;
+  fill-opacity: 0;
   display: block;
-  background: -webkit-linear-gradient(#9c47fc, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  bottom: 7px;
   -webkit-transform: scale(1.4);
   -moz-transform: scale(1.4);
   -ms-transform: scale(1.4);
   -o-transform: scale(1.4);
 }
-.heartIndex1 .fullHeartI:hover {
+.heartIndex .fullHeartI:hover {
+  transition: 2s;
   opacity: 1;
-}
-.heartIndex1 .emptyHeartI {
-  left: 160px;
-}
-.heartIndex1 .fullHeartI {
-  left: 144px;
-}
-
-.heartIndex2 {
-  display: flex;
-}
-.heartIndex2 .emptyHeartI {
-  transform: scale(1.3);
-  position: relative;
-  bottom: 8px;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-.heartIndex2 .fullHeartI {
-  transform: scale(1.4);
-  opacity: 0;
-  color: #9356dc;
-  display: block;
-  background: -webkit-linear-gradient(#9c47fc, #ff79da);
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: relative;
-  bottom: 7px;
-  -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  -o-transform: scale(1.4);
-}
-.heartIndex2 .fullHeartI:hover {
-  opacity: 1;
-}
-.heartIndex2 .emptyHeartI {
-  left: 189px;
-}
-.heartIndex2 .fullHeartI {
-  left: 173px;
-}
-
-.heartIndex3 {
-  display: flex;
-}
-.heartIndex3 .emptyHeartI {
-  transform: scale(1.3);
-  position: relative;
-  bottom: 8px;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-.heartIndex3 .fullHeartI {
-  transform: scale(1.4);
-  opacity: 0;
-  color: #9356dc;
-  display: block;
-  background: -webkit-linear-gradient(#9c47fc, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  bottom: 7px;
-  -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  -o-transform: scale(1.4);
-}
-.heartIndex3 .fullHeartI:hover {
-  opacity: 1;
-}
-.heartIndex3 .emptyHeartI {
-  left: 178px;
-}
-.heartIndex3 .fullHeartI {
-  left: 162px;
-}
-
-.heartIndex4 {
-  display: flex;
-}
-.heartIndex4 .emptyHeartI {
-  transform: scale(1.3);
-  position: relative;
-  bottom: 8px;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
-}
-.heartIndex4 .fullHeartI {
-  transform: scale(1.4);
-  opacity: 0;
-  color: #9356dc;
-  display: block;
-  background: -webkit-linear-gradient(#9c47fc, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-  bottom: 7px;
-  -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  -o-transform: scale(1.4);
-}
-.heartIndex4 .fullHeartI:hover {
-  opacity: 1;
-}
-.heartIndex4 .emptyHeartI {
-  left: 149px;
-}
-.heartIndex4 .fullHeartI {
-  left: 133px;
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
 }
 
 .menu1 {

@@ -1,4 +1,4 @@
-.mainContainer {
+.card {
   padding-bottom: 2%;
   margin-bottom: -6%;
   background-color: #f2f2f2;
@@ -11,8 +11,24 @@
     padding-left: 6%;
     padding-bottom: 3%;
   }
-  .Content {
+  .card-content {
     margin: 6%;
+    &:hover {
+      transform: scale(1.02);
+      -moz-transform: scale(1.02);
+      scale: (1.1);
+      -ms-transform: scale(1.02);
+      scale: (1.1);
+      -o-transform: scale(1.02);
+      scale: (1.1);
+      -webkit-transform: scale(1.02);
+      scale: (1.1);
+      transition: transform 500ms ease-in-out;
+      -webkit-transition: transform 500ms ease-in-out;
+      -moz-transition: transform 500ms ease-in-out;
+      -ms-transition: transform 500ms ease-in-out;
+      -o-transition: transform 500ms ease-in-out;
+    }
 
     img {
       width: 100%;
@@ -24,7 +40,7 @@
       -ms-border-radius: 15px 15px 0 0;
       -o-border-radius: 15px 15px 0 0;
     }
-    .textContent {
+    .card-content-text {
       background-color: white;
       color: black;
       border-radius: 0px 0px 15px 15px;
@@ -44,21 +60,31 @@
       }
     }
   }
+  .card-new {
+    text-align: center;
+    padding: 10px;
+    background-color: $Green;
+    color: white;
+    width: 12%;
+  }
 }
-.navIndex {
+
+.nav-index {
   ul {
     padding-left: 0%;
     padding-bottom: 10%;
 
     li {
       background-color: #f2f2f2;
-      padding: 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       -webkit-box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.15);
       box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.15);
       border-radius: 18px;
       margin-top: 5%;
       margin-left: 2%;
       margin-right: 2%;
+      padding-left: -1%;
       -webkit-border-radius: 18px;
       -moz-border-radius: 18px;
       -ms-border-radius: 18px;
@@ -77,12 +103,12 @@
         margin-left: 3%;
       }
 
-      .NumberNav {
+      .nav-number {
         font-weight: bold;
         background-color: $Primary;
         color: white;
         padding: 3px 6px 2px 6px;
-        margin-left: -8%;
+        margin-left: -1%;
         margin-right: 5%;
         border-radius: 25px;
         -webkit-border-radius: 25px;
@@ -98,40 +124,7 @@
     }
   }
 }
-.heartIndex1 {
-  @include heartIndex;
-  .emptyHeartI {
-    left: 160px;
-  }
-  .fullHeartI {
-    left: 144px;
-  }
-}
-.heartIndex2 {
-  @include heartIndex;
-  .emptyHeartI {
-    left: 189px;
-  }
-  .fullHeartI {
-    left: 173px;
-  }
-}
-.heartIndex3 {
-  @include heartIndex;
-  .emptyHeartI {
-    left: 178px;
-  }
-  .fullHeartI {
-    left: 162px;
-  }
-}
 
-.heartIndex4 {
+.heartIndex {
   @include heartIndex;
-  .emptyHeartI {
-    left: 149px;
-  }
-  .fullHeartI {
-    left: 133px;
-  }
 }

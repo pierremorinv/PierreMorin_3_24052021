@@ -87,7 +87,6 @@
 .headerIndex .header-index-text .header-index-top {
   background: #dcdadd;
   background: linear-gradient(0deg, #dcdadd 93%, rgba(131, 130, 131, 0.64) 100%);
-  padding-bottom: 7px;
 }
 .headerIndex .header-index-text .header-index-top .marginHeaderText {
   font-weight: bold;
@@ -247,6 +246,68 @@ footer .logoText {
   -ms-transition: transform 500ms ease-in-out;
   -o-transition: transform 500ms ease-in-out;
 }
+.card .card-content .card-background-image-1 {
+  background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  -webkit-border-radius: 15px 15px 0 0;
+  -moz-border-radius: 15px 15px 0 0;
+  -ms-border-radius: 15px 15px 0 0;
+  -o-border-radius: 15px 15px 0 0;
+  position: relative;
+}
+.card .card-content .card-background-image-1 .card-new {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #99e2d0;
+  position: absolute;
+  padding: 8px 8px 5px 5px;
+  top: 10px;
+  right: 10px;
+}
+.card .card-content .card-background-image-1 .card-new p {
+  margin: 0px 0px 4px 4px;
+  color: #0b180f;
+}
+.card .card-content .card-background-image-2 {
+  background-image: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  -webkit-border-radius: 15px 15px 0 0;
+  -moz-border-radius: 15px 15px 0 0;
+  -ms-border-radius: 15px 15px 0 0;
+  -o-border-radius: 15px 15px 0 0;
+  position: relative;
+}
+.card .card-content .card-background-image-2 .card-new {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #99e2d0;
+  position: absolute;
+  padding: 8px 8px 5px 5px;
+  top: 10px;
+  right: 10px;
+}
+.card .card-content .card-background-image-2 .card-new p {
+  margin: 0px 0px 4px 4px;
+  color: #0b180f;
+}
 .card .card-content img {
   width: 100%;
   height: 150px;
@@ -276,19 +337,12 @@ footer .logoText {
 .card .card-content .card-content-text p {
   margin-top: 0%;
 }
-.card .card-new {
-  text-align: center;
-  padding: 10px;
-  background-color: #99e2d0;
-  color: white;
-  width: 12%;
-}
 
 .nav-index ul {
   padding-left: 0%;
   padding-bottom: 10%;
 }
-.nav-index ul li {
+.nav-index li {
   background-color: #f2f2f2;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -304,20 +358,20 @@ footer .logoText {
   -ms-border-radius: 18px;
   -o-border-radius: 18px;
 }
-.nav-index ul li:hover {
+.nav-index li:hover {
   background-color: rgba(147, 86, 220, 0.2);
   -webkit-box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.25);
   box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.25);
 }
-.nav-index ul li:hover .fa-mobile-alt,
-.nav-index ul li:hover .fa-list-ul,
-.nav-index ul li:hover .fa-store {
+.nav-index li:hover .fa-mobile-alt,
+.nav-index li:hover .fa-list-ul,
+.nav-index li:hover .fa-store {
   color: #9356dc;
 }
-.nav-index ul li h2 {
+.nav-index li h2 {
   margin-left: 3%;
 }
-.nav-index ul li .nav-number {
+.nav-index li .nav-number {
   font-weight: bold;
   background-color: #9356dc;
   color: white;
@@ -330,7 +384,7 @@ footer .logoText {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
 }
-.nav-index ul li a {
+.nav-index li a {
   color: black;
   font-weight: bold;
   padding-left: 10%;
@@ -342,24 +396,47 @@ footer .logoText {
 }
 .heartIndex .fullHeartI {
   margin-right: 5%;
-  transform: scale(1.4);
-  fill-opacity: 0;
+  transform: scale(1.2);
   display: block;
-  -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  -o-transform: scale(1.4);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
-.heartIndex .fullHeartI:hover {
-  transition: 2s;
+.heartIndex .far {
   opacity: 1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.heartIndex .far:hover {
+  opacity: 0;
+}
+.heartIndex .fas {
+  transform: translateX(125%) scale(1.12);
   background: -webkit-linear-gradient(#9356dc, #ff79da);
+  opacity: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-transition: 2s;
-  -moz-transition: 2s;
-  -ms-transition: 2s;
-  -o-transition: 2s;
+  transition: 0.7s;
+  -webkit-transition: 0.7s;
+  -moz-transition: 0.7s;
+  -ms-transition: 0.7s;
+  -o-transition: 0.7s;
+  -webkit-transform: translateX(125%) scale(1.12);
+  -moz-transform: translateX(125%) scale(1.12);
+  -ms-transform: translateX(125%) scale(1.12);
+  -o-transform: translateX(125%) scale(1.12);
+}
+.heartIndex .fas:hover {
+  transition: 1.5s;
+  opacity: 1;
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
 }
 
 .menu1 {

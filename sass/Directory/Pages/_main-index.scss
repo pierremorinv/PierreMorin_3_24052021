@@ -13,6 +13,7 @@
   }
   .card-content {
     margin: 6%;
+
     &:hover {
       transform: scale(1.02);
       -moz-transform: scale(1.02);
@@ -29,7 +30,14 @@
       -ms-transition: transform 500ms ease-in-out;
       -o-transition: transform 500ms ease-in-out;
     }
-
+    .card-background-image-1 {
+      background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+      @include card-img-index;
+    }
+    .card-background-image-2 {
+      background-image: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+      @include card-img-index;
+    }
     img {
       width: 100%;
       height: 150px;
@@ -60,67 +68,60 @@
       }
     }
   }
-  .card-new {
-    text-align: center;
-    padding: 10px;
-    background-color: $Green;
-    color: white;
-    width: 12%;
-  }
 }
 
 .nav-index {
   ul {
     padding-left: 0%;
     padding-bottom: 10%;
+  }
 
-    li {
-      background-color: #f2f2f2;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      -webkit-box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.15);
-      box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.15);
-      border-radius: 18px;
-      margin-top: 5%;
-      margin-left: 2%;
-      margin-right: 2%;
-      padding-left: -1%;
-      -webkit-border-radius: 18px;
-      -moz-border-radius: 18px;
-      -ms-border-radius: 18px;
-      -o-border-radius: 18px;
-      &:hover {
-        background-color: rgba(147, 86, 220, 0.2);
-        -webkit-box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.25);
-        box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.25);
-        .fa-mobile-alt,
-        .fa-list-ul,
-        .fa-store {
-          color: $Primary;
-        }
+  li {
+    background-color: #f2f2f2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-left: -1%;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    &:hover {
+      background-color: rgba(147, 86, 220, 0.2);
+      -webkit-box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.25);
+      box-shadow: 5px 2px 9px 1px rgba(0, 0, 0, 0.25);
+      .fa-mobile-alt,
+      .fa-list-ul,
+      .fa-store {
+        color: $Primary;
       }
-      h2 {
-        margin-left: 3%;
-      }
+    }
+    h2 {
+      margin-left: 3%;
+    }
 
-      .nav-number {
-        font-weight: bold;
-        background-color: $Primary;
-        color: white;
-        padding: 3px 6px 2px 6px;
-        margin-left: -1%;
-        margin-right: 5%;
-        border-radius: 25px;
-        -webkit-border-radius: 25px;
-        -moz-border-radius: 25px;
-        -ms-border-radius: 25px;
-        -o-border-radius: 25px;
-      }
-      a {
-        color: black;
-        font-weight: bold;
-        padding-left: 10%;
-      }
+    .nav-number {
+      font-weight: bold;
+      background-color: $Primary;
+      color: white;
+      padding: 3px 6px 2px 6px;
+      margin-left: -1%;
+      margin-right: 5%;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+    }
+    a {
+      color: black;
+      font-weight: bold;
+      padding-left: 10%;
     }
   }
 }

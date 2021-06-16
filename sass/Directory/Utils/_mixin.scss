@@ -82,24 +82,47 @@
 
   .fullHeartI {
     margin-right: 5%;
-    transform: scale(1.4);
-    fill-opacity: (0);
+    transform: scale(1.2);
     display: block;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+  }
 
-    -webkit-transform: scale(1.4);
-    -moz-transform: scale(1.4);
-    -ms-transform: scale(1.4);
-    -o-transform: scale(1.4);
+  .far {
+    opacity: 1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
     &:hover {
-      transition: 2s;
+      opacity: 0;
+    }
+  }
+  .fas {
+    transform: translateX(125%) scale(1.12);
+    background: -webkit-linear-gradient($Primary, $Secondary);
+    opacity: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.7s;
+    -webkit-transition: 0.7s;
+    -moz-transition: 0.7s;
+    -ms-transition: 0.7s;
+    -o-transition: 0.7s;
+    -webkit-transform: translateX(125%) scale(1.12);
+    -moz-transform: translateX(125%) scale(1.12);
+    -ms-transform: translateX(125%) scale(1.12);
+    -o-transform: translateX(125%) scale(1.12);
+    &:hover {
+      transition: 1.5s;
       opacity: 1;
-      background: -webkit-linear-gradient($Primary, $Secondary);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      -webkit-transition: 2s;
-      -moz-transition: 2s;
-      -ms-transition: 2s;
-      -o-transition: 2s;
+      -webkit-transition: 1.5s;
+      -moz-transition: 1.5s;
+      -ms-transition: 1.5s;
+      -o-transition: 1.5s;
     }
   }
 }
@@ -108,4 +131,34 @@
   width: 100%;
   height: 250px;
   background-size: cover;
+}
+@mixin card-img-index {
+  width: 100%;
+  height: 150px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  -webkit-border-radius: 15px 15px 0 0;
+  -moz-border-radius: 15px 15px 0 0;
+  -ms-border-radius: 15px 15px 0 0;
+  -o-border-radius: 15px 15px 0 0;
+  position: relative;
+  .card-new {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background-color: $Green;
+    position: absolute;
+    padding: 8px 8px 5px 5px;
+    top: 10px;
+    right: 10px;
+    p {
+      margin: 0px 0px 4px 4px;
+      color: #0b180f;
+    }
+  }
 }

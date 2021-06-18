@@ -1,5 +1,5 @@
 @mixin menu {
-  margin: 4%;
+  margin: 3%;
   padding: 10px;
   position: relative;
   border-radius: 25px;
@@ -11,7 +11,15 @@
     -moz-border-radius: 25px;
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
-    width: 180px;
+  }
+
+  &:hover .price {
+    padding-right: 70px;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
   }
   &:hover .check {
     transform: translateX(0%);
@@ -25,31 +33,45 @@
   }
 
   .fa-check-circle {
-    transition: all 0.5s ease;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
   }
   p {
     display: inline-block;
     margin-bottom: 0%;
-    font-size: 15px;
+    font-size: 14px;
+    margin-left: 2%;
   }
   h3 {
     margin-bottom: 0px;
     margin-top: 5px;
     font-size: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all 0.5s ease;
   }
 }
-.description {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 250px;
-  overflow: hidden;
-  transition: all 0.5s ease;
-}
+.menuLine-text {
+  display: flex;
+  justify-content: space-between;
 
-.price {
-  margin-left: 20px;
-  overflow: hidden;
-  font-weight: bold;
+  margin-right: 3%;
+
+  .description {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+
+  .price {
+    overflow: hidden;
+    font-weight: bold;
+  }
 }
 @mixin btn {
   text-decoration: none;
@@ -82,12 +104,12 @@
 
   .fullHeartI {
     margin-right: 5%;
-    transform: scale(1.2);
+    transform: scale(1.3);
     display: block;
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
   }
 
   .far {
@@ -102,27 +124,28 @@
     }
   }
   .fas {
-    transform: translateX(125%) scale(1.12);
-    background: -webkit-linear-gradient($Primary, $Secondary);
+    transform: translateX(125%) scale(1.3);
     opacity: 0;
+    background: -webkit-linear-gradient($Primary, $Secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: 0.7s;
-    -webkit-transition: 0.7s;
-    -moz-transition: 0.7s;
-    -ms-transition: 0.7s;
-    -o-transition: 0.7s;
-    -webkit-transform: translateX(125%) scale(1.12);
-    -moz-transform: translateX(125%) scale(1.12);
-    -ms-transform: translateX(125%) scale(1.12);
-    -o-transform: translateX(125%) scale(1.12);
+
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transform: translateX(125%) scale(1.3);
+    -moz-transform: translateX(125%) scale(1.3);
+    -ms-transform: translateX(125%) scale(1.3);
+    -o-transform: translateX(125%) scale(1.3);
     &:hover {
-      transition: 1.5s;
+      transition: 1s;
       opacity: 1;
-      -webkit-transition: 1.5s;
-      -moz-transition: 1.5s;
-      -ms-transition: 1.5s;
-      -o-transition: 1.5s;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -ms-transition: 1s;
+      -o-transition: 1s;
     }
   }
 }
@@ -159,6 +182,54 @@
     p {
       margin: 0px 0px 4px 4px;
       color: #0b180f;
+    }
+  }
+}
+@mixin heart-menu {
+  position: absolute;
+  bottom: 25%;
+  right: 10px;
+
+  transform: scale(1.2);
+  display: block;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+
+  .far {
+    opacity: 1;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    &:hover {
+      opacity: 0;
+    }
+  }
+  .fas {
+    transform: translateX(-125%) scale(1.12);
+    background: -webkit-linear-gradient($Primary, $Secondary);
+    opacity: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transform: translateX(-125%) scale(1.12);
+    -moz-transform: translateX(-125%) scale(1.12);
+    -ms-transform: translateX(-125%) scale(1.12);
+    -o-transform: translateX(-125%) scale(1.12);
+    &:hover {
+      transition: 1s;
+      opacity: 1;
+      -webkit-transition: 1s;
+      -moz-transition: 1s;
+      -ms-transition: 1s;
+      -o-transition: 1s;
     }
   }
 }

@@ -1,13 +1,15 @@
-.description {
+.menuLine-text {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 3%;
+}
+.menuLine-text .description {
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 250px;
   overflow: hidden;
   transition: all 0.5s ease;
 }
-
-.price {
-  margin-left: 20px;
+.menuLine-text .price {
   overflow: hidden;
   font-weight: bold;
 }
@@ -174,7 +176,7 @@ footer .logoText {
 }
 
 .menuLine {
-  margin: 4%;
+  margin: 3%;
   padding: 10px;
   position: relative;
   border-radius: 25px;
@@ -187,7 +189,14 @@ footer .logoText {
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
-  width: 180px;
+}
+.menuLine:hover .price {
+  padding-right: 70px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
 }
 .menuLine:hover .check {
   transform: translateX(0%);
@@ -200,17 +209,79 @@ footer .logoText {
   -o-transform: rotateZ(360deg);
 }
 .menuLine .fa-check-circle {
-  transition: all 0.5s ease;
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
 }
 .menuLine p {
   display: inline-block;
   margin-bottom: 0%;
-  font-size: 15px;
+  font-size: 14px;
+  margin-left: 2%;
 }
 .menuLine h3 {
   margin-bottom: 0px;
   margin-top: 5px;
   font-size: 15px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.loader {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border-radius: 100px;
+  background: #9356dc;
+  color: #ff79da;
+  display: flex;
+}
+.loader .lettre {
+  color: #99e2d0;
+  font-size: 80px;
+  letter-spacing: 15px;
+  animation: flash 1.5s linear infinite;
+  -webkit-animation: flash 1.5s linear infinite;
+}
+.loader .lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.loader .lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loader .lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.loader .lettre:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.loader .lettre:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.loader .lettre:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.loader .lettre:nth-child(7) {
+  animation-delay: 0.7s;
+}
+@keyframes flash {
+  0% {
+    color: #ff79da;
+    text-shadow: 0 0 7px #ff79da;
+  }
+  90% {
+    color: #99e2d0;
+    text-shadow: none;
+  }
+  100% {
+    color: #ff79da;
+    text-shadow: 0 0 7px #ff79da;
+  }
 }
 
 .card {
@@ -233,13 +304,9 @@ footer .logoText {
 .card .card-content:hover {
   transform: scale(1.02);
   -moz-transform: scale(1.02);
-  scale: 1.1;
   -ms-transform: scale(1.02);
-  scale: 1.1;
   -o-transform: scale(1.02);
-  scale: 1.1;
   -webkit-transform: scale(1.02);
-  scale: 1.1;
   transition: transform 500ms ease-in-out;
   -webkit-transition: transform 500ms ease-in-out;
   -moz-transition: transform 500ms ease-in-out;
@@ -352,7 +419,6 @@ footer .logoText {
   margin-top: 5%;
   margin-left: 2%;
   margin-right: 2%;
-  padding-left: -1%;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
@@ -396,12 +462,12 @@ footer .logoText {
 }
 .heartIndex .fullHeartI {
   margin-right: 5%;
-  transform: scale(1.2);
+  transform: scale(1.3);
   display: block;
-  -webkit-transform: scale(1.2);
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -o-transform: scale(1.2);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  -o-transform: scale(1.3);
 }
 .heartIndex .far {
   opacity: 1;
@@ -415,28 +481,28 @@ footer .logoText {
   opacity: 0;
 }
 .heartIndex .fas {
-  transform: translateX(125%) scale(1.12);
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  transform: translateX(125%) scale(1.3);
   opacity: 0;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: 0.7s;
-  -webkit-transition: 0.7s;
-  -moz-transition: 0.7s;
-  -ms-transition: 0.7s;
-  -o-transition: 0.7s;
-  -webkit-transform: translateX(125%) scale(1.12);
-  -moz-transform: translateX(125%) scale(1.12);
-  -ms-transform: translateX(125%) scale(1.12);
-  -o-transform: translateX(125%) scale(1.12);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transform: translateX(125%) scale(1.3);
+  -moz-transform: translateX(125%) scale(1.3);
+  -ms-transform: translateX(125%) scale(1.3);
+  -o-transform: translateX(125%) scale(1.3);
 }
 .heartIndex .fas:hover {
-  transition: 1.5s;
+  transition: 1s;
   opacity: 1;
-  -webkit-transition: 1.5s;
-  -moz-transition: 1.5s;
-  -ms-transition: 1.5s;
-  -o-transition: 1.5s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 .menu1 {
@@ -534,39 +600,62 @@ footer .logoText {
   margin-right: 80%;
   margin-left: 6%;
 }
-.MainMenu .MenuSection .TitleSection {
+.MainMenu .heart-menu {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.MainMenu .heart-menu h1 {
   padding-left: 6%;
   padding-top: 8%;
   display: flex;
   font-family: "Shrikhand-Regular";
 }
-.MainMenu .emptyHeart {
+.MainMenu .heart-menu .full-heart-menu {
   position: absolute;
-  right: 13%;
-  top: 45%;
-  transform: scale(1.35);
-  -webkit-transform: scale(1.35);
-  -moz-transform: scale(1.35);
-  -ms-transform: scale(1.35);
-  -o-transform: scale(1.35);
+  bottom: 25%;
+  right: 10px;
+  transform: scale(1.2);
+  display: block;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
-.MainMenu .fullHeart {
-  position: absolute;
+.MainMenu .heart-menu .full-heart-menu .far {
+  opacity: 1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.MainMenu .heart-menu .full-heart-menu .far:hover {
   opacity: 0;
-  right: 13%;
-  top: 45%;
-  color: #9356dc;
+}
+.MainMenu .heart-menu .full-heart-menu .fas {
+  transform: translateX(-125%) scale(1.12);
   background: -webkit-linear-gradient(#9356dc, #ff79da);
+  opacity: 0;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transform: scale(1.35);
-  -webkit-transform: scale(1.35);
-  -moz-transform: scale(1.35);
-  -ms-transform: scale(1.35);
-  -o-transform: scale(1.35);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transform: translateX(-125%) scale(1.12);
+  -moz-transform: translateX(-125%) scale(1.12);
+  -ms-transform: translateX(-125%) scale(1.12);
+  -o-transform: translateX(-125%) scale(1.12);
 }
-.MainMenu .fullHeart:hover {
+.MainMenu .heart-menu .full-heart-menu .fas:hover {
+  transition: 1s;
   opacity: 1;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
 
 body {

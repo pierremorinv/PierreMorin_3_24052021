@@ -91,39 +91,20 @@
       margin-right: 80%;
       margin-left: 6%;
     }
-    .TitleSection {
+  }
+  .heart-menu {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    h1 {
       padding-left: 6%;
       padding-top: 8%;
       display: flex;
       font-family: "Shrikhand-Regular";
     }
-  }
-  .emptyHeart {
-    position: absolute;
-    right: 13%;
-    top: 45%;
-    transform: scale(1.35);
-    -webkit-transform: scale(1.35);
-    -moz-transform: scale(1.35);
-    -ms-transform: scale(1.35);
-    -o-transform: scale(1.35);
-  }
-  .fullHeart {
-    position: absolute;
-    opacity: 0;
-    right: 13%;
-    top: 45%;
-    color: $Primary;
-    background: -webkit-linear-gradient($Primary, $Secondary);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(1.35);
-    -webkit-transform: scale(1.35);
-    -moz-transform: scale(1.35);
-    -ms-transform: scale(1.35);
-    -o-transform: scale(1.35);
-    &:hover {
-      opacity: 1;
+    .full-heart-menu {
+      @include heart-menu;
     }
   }
 }

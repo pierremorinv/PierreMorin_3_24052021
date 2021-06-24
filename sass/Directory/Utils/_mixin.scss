@@ -2,25 +2,24 @@
   margin: 3%;
   padding: 10px;
   position: relative;
-  border-radius: 25px;
   overflow: hidden;
   box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.1);
-  &:hover .description {
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-  }
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+ 
 
   &:hover .price {
-    padding-right: 70px;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-  }
+    padding-right: 65px;
+    transition:all ease 0.5s;
+    -webkit-transition:all ease 0.5s;
+    -moz-transition:all ease 0.5s;
+    -ms-transition:all ease 0.5s;
+    -o-transition:all ease 0.5s;
+    
+}
   &:hover .check {
     transform: translateX(0%);
   }
@@ -33,12 +32,12 @@
   }
 
   .fa-check-circle {
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    -o-transition: all 1s ease;
-  }
+    transition: all 1.2s ease;
+    -webkit-transition: all 1.2s ease;
+    -moz-transition: all 1.2s ease;
+    -ms-transition: all 1.2s ease;
+    -o-transition: all 1.2s ease;
+}
   p {
     display: inline-block;
     margin-bottom: 0%;
@@ -147,12 +146,23 @@
   }
 }
 
-@mixin imgCardIndex {
+@mixin background-image-menu {
+ 
   width: 100%;
   height: 250px;
-  background-size: cover;
+  background-size:cover;
+  padding-bottom: 10%;
+  @include desktop-tablet-only {
+    padding-bottom: 20%;
+    padding-top: 20%;
+  }
+  
+  
 }
 @mixin card-img-index {
+  @include desktop-tablet-only{
+    height: 200px;
+  }
   width: 100%;
   height: 150px;
   background-size: cover;
@@ -226,5 +236,11 @@
       -ms-transition: 1s;
       -o-transition: 1s;
     }
+  }
+}
+$breakpoints: ( desktop-tablet:599px);
+@mixin desktop-tablet-only{
+  @media (min-width: map-get($map: $breakpoints, $key:desktop-tablet)) {  @content;
+    
   }
 }

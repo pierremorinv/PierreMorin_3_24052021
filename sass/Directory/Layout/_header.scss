@@ -1,64 +1,86 @@
 .HeaderMenu {
+ 
+    @include desktop-tablet-only{
+     
+      margin: 0%;
+    }
+    .MenuImg1 {
+      @include background-image-menu;
+      background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+    }
+    .MenuImg2 {
+      @include background-image-menu;
+      background-image: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
+    }
+    .MenuImg3 {
+      @include background-image-menu;
+      background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+    }
+    .MenuImg4 {
+      @include background-image-menu;
+      background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+    }
+  }
   .TopHeaderMenu {
     display: flex;
+    justify-content: space-around;
     margin-bottom: 2%;
     margin-top: 2%;
+    align-items: baseline;
+    .logo {
+      width: 90%;
+      font-family: "Shrikhand-Regular", "sans-serif";
+      text-align: center;
+      .fa-arrow-left{
+        margin-left: 10%;
+        align-items: center;
+        
+      }
     .marginHeaderText {
       padding-left: 2%;
     }
   }
-  .logo {
-    width: 40%;
-  }
-  .fa-arrow-left {
-    margin-left: 15px;
-    margin-right: 80px;
-  }
-
-  .MenuImg1 {
-    @include imgCardIndex;
-    background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-  }
-  .MenuImg2 {
-    @include imgCardIndex;
-    background-image: url("./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg");
-  }
-  .MenuImg3 {
-    @include imgCardIndex;
-    background-image: url("./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-  }
-  .MenuImg4 {
-    @include imgCardIndex;
-    background-image: url("./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
-  }
+  
 }
-
+.logo-index {
+  text-align: center;
+  font-family: "Shrikhand-Regular", "sans-serif";
+  @include desktop-tablet-only{
+   font-size: 40px;
+  }
+ 
+}
 .headerIndex {
+  @include desktop-tablet-only{
+    padding-bottom: 0%;
+  }
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding-bottom: 5%;
+  
   padding-bottom: 8%;
   background-color: #f2f2f2;
+  
 
-  .header-logo-index {
-    width: 60%;
-    margin-left: 18%;
-  }
+  
   .header-index-text {
     text-align: center;
 
     margin-left: 0%;
     margin-right: 0%;
 
-    h1 {
+    h2 {
       font-size: 24px;
     }
     p {
+      @include desktop-tablet-only{
+        padding: 2%;
+      }
       padding-bottom: 3%;
       padding-top: 3%;
     }
     .header-index-top {
+      margin: 0%;
       background: rgb(220, 218, 221);
       background: linear-gradient(
         0deg,

@@ -1,4 +1,7 @@
 .menu1 {
+  @include desktop-tablet-only{
+    width: 30%;
+  }
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1.5s;
@@ -23,6 +26,9 @@
   }
 }
 .menu2 {
+  @include desktop-tablet-only{
+    width: 30%;
+  }
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 3s;
@@ -47,6 +53,9 @@
   }
 }
 .menu3 {
+  @include desktop-tablet-only{
+    width: 30%;
+  }
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 4.5s;
@@ -83,7 +92,15 @@
     -moz-border-radius: 35px;
     -ms-border-radius: 35px;
     -o-border-radius: 35px;
-
+    @include desktop-tablet-only{
+      margin-top: -2%;
+    }
+    .menu-flexbox{
+      @include desktop-tablet-only{
+        display: flex;
+      justify-content: space-around;
+    
+      }
     h2 {
       font-size: 16px;
       border-bottom: 3px solid $Green;
@@ -91,13 +108,19 @@
       margin-right: 80%;
       margin-left: 6%;
     }
+    
   }
+  
   .heart-menu {
     position: relative;
     display: flex;
     justify-content: space-between;
+    
 
     h1 {
+      @include desktop-tablet-only{
+        padding-top: 0%;
+      }
       padding-left: 6%;
       padding-top: 8%;
       display: flex;
@@ -107,4 +130,30 @@
       @include heart-menu;
     }
   }
+}
+
+  
+}
+.check {
+  background-color: $Green;
+  padding: 0 25px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  transform: translateX(100%);
+  transition: all 0.5s ease;
+  -webkit-transform: translateX(100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  
+}
+.menuLine {
+  @include menu;
 }

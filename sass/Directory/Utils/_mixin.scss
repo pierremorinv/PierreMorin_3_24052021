@@ -9,17 +9,15 @@
   -moz-border-radius: 25px;
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
- 
 
   &:hover .price {
     padding-right: 65px;
-    transition:all ease 0.5s;
-    -webkit-transition:all ease 0.5s;
-    -moz-transition:all ease 0.5s;
-    -ms-transition:all ease 0.5s;
-    -o-transition:all ease 0.5s;
-    
-}
+    transition: all ease 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+  }
   &:hover .check {
     transform: translateX(0%);
   }
@@ -37,7 +35,7 @@
     -moz-transition: all 1.2s ease;
     -ms-transition: all 1.2s ease;
     -o-transition: all 1.2s ease;
-}
+  }
   p {
     display: inline-block;
     margin-bottom: 0%;
@@ -147,20 +145,17 @@
 }
 
 @mixin background-image-menu {
- 
   width: 100%;
   height: 250px;
-  background-size:cover;
+  background-size: cover;
   padding-bottom: 10%;
   @include desktop-tablet-only {
     padding-bottom: 20%;
     padding-top: 20%;
   }
-  
-  
 }
 @mixin card-img-index {
-  @include desktop-tablet-only{
+  @include desktop-tablet-only {
     height: 200px;
   }
   width: 100%;
@@ -238,9 +233,18 @@
     }
   }
 }
-$breakpoints: ( desktop-tablet:599px);
-@mixin desktop-tablet-only{
-  @media (min-width: map-get($map: $breakpoints, $key:desktop-tablet)) {  @content;
-    
+$breakpoints: (
+  desktop-tablet: 599px,
+  desktop: 1024px,
+);
+
+@mixin desktop-tablet-only {
+  @media (min-width: map-get($map: $breakpoints, $key:desktop-tablet)) {
+    @content;
+  }
+}
+@mixin dekstop-only {
+  @media (min-width: map-get($map: $breakpoints, $key: desktop)) {
+    @content;
   }
 }

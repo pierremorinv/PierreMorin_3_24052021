@@ -74,6 +74,12 @@
   text-decoration: none;
   color: white;
   border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  -webkit-box-shadow: 5px 5px 15px 3px $Primary;
+  box-shadow: 5px 3px 5px 3px $Primary;
   background: rgb(255, 121, 218);
   background: linear-gradient(
     119deg,
@@ -82,17 +88,15 @@
   );
 
   &:hover {
+    -webkit-box-shadow: 5px 5px 15px 3px $Primary;
+    box-shadow: 5px 3px 15px 3px $Primary;
     background: rgb(255, 121, 218);
     background: linear-gradient(
       127deg,
-      rgba(255, 121, 218, 0.7) 30%,
-      rgba(147, 86, 220, 0.7) 100%
+      rgba(255, 121, 218, 0.9) 30%,
+      rgba(147, 86, 220, 0.9) 100%
     );
   }
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
 }
 
 @mixin heartIndex {
@@ -243,7 +247,7 @@ $breakpoints: (
     @content;
   }
 }
-@mixin dekstop-only {
+@mixin desktop-only {
   @media (min-width: map-get($map: $breakpoints, $key: desktop)) {
     @content;
   }

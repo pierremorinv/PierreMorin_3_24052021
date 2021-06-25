@@ -151,19 +151,23 @@
   text-decoration: none;
   color: white;
   border-radius: 40px;
-  background: #ff79da;
-  background: linear-gradient(119deg, #ff79da 22%, #9356dc 96%);
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
+  -webkit-box-shadow: 5px 5px 15px 3px #9356dc;
+  box-shadow: 5px 3px 5px 3px #9356dc;
+  background: #ff79da;
+  background: linear-gradient(119deg, #ff79da 22%, #9356dc 96%);
   text-align: center;
   padding: 20px 15px 20px 15px;
   font-size: 13px;
 }
 .headerIndex .header-index-text .BtnIndex:hover {
+  -webkit-box-shadow: 5px 5px 15px 3px #9356dc;
+  box-shadow: 5px 3px 15px 3px #9356dc;
   background: #ff79da;
-  background: linear-gradient(127deg, rgba(255, 121, 218, 0.7) 30%, rgba(147, 86, 220, 0.7) 100%);
+  background: linear-gradient(127deg, rgba(255, 121, 218, 0.9) 30%, rgba(147, 86, 220, 0.9) 100%);
 }
 
 footer {
@@ -202,17 +206,21 @@ footer .logoText {
   text-decoration: none;
   color: white;
   border-radius: 40px;
-  background: #ff79da;
-  background: linear-gradient(119deg, #ff79da 22%, #9356dc 96%);
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
+  -webkit-box-shadow: 5px 5px 15px 3px #9356dc;
+  box-shadow: 5px 3px 5px 3px #9356dc;
+  background: #ff79da;
+  background: linear-gradient(119deg, #ff79da 22%, #9356dc 96%);
   padding: 20px 50px 20px 50px;
 }
 .btn-order a:hover {
+  -webkit-box-shadow: 5px 5px 15px 3px #9356dc;
+  box-shadow: 5px 3px 15px 3px #9356dc;
   background: #ff79da;
-  background: linear-gradient(127deg, rgba(255, 121, 218, 0.7) 30%, rgba(147, 86, 220, 0.7) 100%);
+  background: linear-gradient(127deg, rgba(255, 121, 218, 0.9) 30%, rgba(147, 86, 220, 0.9) 100%);
 }
 .btn-order p {
   text-align: center;
@@ -233,7 +241,7 @@ footer .logoText {
   padding-left: 0%;
   padding-bottom: 10%;
 }
-@media (min-width: 599px) {
+@media (min-width: 1024px) {
   .nav-index ul {
     display: flex;
     flex-wrap: wrap;
@@ -255,10 +263,10 @@ footer .logoText {
   -ms-border-radius: 18px;
   -o-border-radius: 18px;
 }
-@media (min-width: 599px) {
+@media (min-width: 1024px) {
   .nav-index li {
     margin-top: 0%;
-    width: 28%;
+    width: 29%;
   }
 }
 .nav-index li:hover {
@@ -276,7 +284,9 @@ footer .logoText {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
 }
-.nav-index li:hover .fa-mobile-alt, .nav-index li:hover .fa-list-ul, .nav-index li:hover .fa-store {
+.nav-index li:hover .fa-mobile-alt,
+.nav-index li:hover .fa-list-ul,
+.nav-index li:hover .fa-store {
   color: #9356dc;
 }
 .nav-index li .nav-number {

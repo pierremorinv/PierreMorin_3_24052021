@@ -6,17 +6,6 @@
 @import "./Directory/Components/button";
 @import "./Directory/Pages/main-index";
 @import "./Directory/Pages/main-menu";
-
-body {
-  font-family: "Roboto-Regular", sans-serif;
-  a {
-    text-decoration: none;
-  }
-  ul {
-    list-style: none;
-  }
-}
-
 .loader {
   z-index: 1;
   display: flex;
@@ -127,5 +116,14 @@ body {
     -moz-transform: scale(1) rotateZ(-360deg);
     -ms-transform: scale(1) rotateZ(-360deg);
     -o-transform: scale(1) rotateZ(-360deg);
+  }
+}
+body {
+  font-family: "Roboto-Regular", sans-serif;
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
   }
 }

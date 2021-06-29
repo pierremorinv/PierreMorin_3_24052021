@@ -12,11 +12,11 @@
 
   &:hover .price {
     padding-right: 85px;
-    transition: all ease 1s;
-    -webkit-transition: all ease 1s;
-    -moz-transition: all ease 1s;
-    -ms-transition: all ease 1s;
-    -o-transition: all ease 1s;
+    transition: all ease-out 1s;
+    -webkit-transition: all ease-out 1s;
+    -moz-transition: all ease-out 1s;
+    -ms-transition: all ease-out 1s;
+    -o-transition: all ease-out 1s;
   }
   &:hover .check {
     transform: translateX(0%);

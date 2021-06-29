@@ -11,12 +11,12 @@
   -o-border-radius: 25px;
 
   &:hover .price {
-    padding-right: 65px;
-    transition: all ease 0.5s;
-    -webkit-transition: all ease 0.5s;
-    -moz-transition: all ease 0.5s;
-    -ms-transition: all ease 0.5s;
-    -o-transition: all ease 0.5s;
+    padding-right: 85px;
+    transition: all ease 1s;
+    -webkit-transition: all ease 1s;
+    -moz-transition: all ease 1s;
+    -ms-transition: all ease 1s;
+    -o-transition: all ease 1s;
   }
   &:hover .check {
     transform: translateX(0%);
@@ -50,12 +50,12 @@
     white-space: nowrap;
     overflow: hidden;
     transition: all 0.5s ease;
+    padding-right: 70px;
   }
 }
 .menuLine-text {
   display: flex;
   justify-content: space-between;
-
   margin-right: 3%;
 
   .description {
@@ -115,19 +115,19 @@
 
   .far {
     opacity: 1;
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
+
     &:hover {
+      transition: 0.5s;
       opacity: 0;
+      -webkit-transition: 0.5s;
+      -moz-transition: 0.5s;
+      -ms-transition: 0.5s;
+      -o-transition: 0.5s;
     }
   }
   .fas {
     transform: translateX(125%) scale(1.1);
     opacity: 0;
-    color: $Primary;
     transition: 0.5s;
     -webkit-transition: 0.5s;
     -moz-transition: 0.5s;
@@ -137,20 +137,21 @@
     -moz-transform: translateX(125%) scale(1.1);
     -ms-transform: translateX(125%) scale(1.1);
     -o-transform: translateX(125%) scale(1.1);
-    background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-    background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-    background: linear-gradient(to bottom, $Primary 0%, $Secondary 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+
     &:hover {
+      color: transparent;
+      background: linear-gradient(to bottom, $Primary 0%, $Secondary 100%);
+      background: -moz-linear-gradient(top, $Primary 0%, $Secondary 100%);
+      background: -webkit-linear-gradient(top, $Primary 0%, $Secondary 100%);
       transition: 1s;
       opacity: 1;
       -webkit-transition: 1s;
       -moz-transition: 1s;
       -ms-transition: 1s;
       -o-transition: 1s;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      background-clip: text;
     }
   }
 }
@@ -234,8 +235,8 @@
     -moz-transform: translateX(-125%) scale(1.1);
     -ms-transform: translateX(-125%) scale(1.1);
     -o-transform: translateX(-125%) scale(1.1);
-    background: -moz-linear-gradient(top, $Primary 0%, $Secondary 100%);
-    background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+    background: -moz-linear-gradient(to top, $Primary 0%, $Secondary 100%);
+    background: -webkit-linear-gradient(to top, $Primary 0%, $Secondary 100%);
     background: linear-gradient(to bottom, $Primary 0%, $Secondary 100%);
     -webkit-background-clip: text;
     -moz-background-clip: text;

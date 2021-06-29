@@ -88,7 +88,7 @@
   align-items: baseline;
 }
 .TopHeaderMenu .logo {
-  width: 90%;
+  width: 100%;
   font-family: "Shrikhand-Regular", "sans-serif";
   text-align: center;
 }
@@ -482,19 +482,18 @@ footer .logoText {
 }
 .heartIndex .far {
   opacity: 1;
+}
+.heartIndex .far:hover {
   transition: 0.5s;
+  opacity: 0;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
-.heartIndex .far:hover {
-  opacity: 0;
-}
 .heartIndex .fas {
   transform: translateX(125%) scale(1.1);
   opacity: 0;
-  color: #9356dc;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -504,21 +503,21 @@ footer .logoText {
   -moz-transform: translateX(125%) scale(1.1);
   -ms-transform: translateX(125%) scale(1.1);
   -o-transform: translateX(125%) scale(1.1);
-  background: -moz-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-  background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
-  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 .heartIndex .fas:hover {
+  color: transparent;
+  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
+  background: -moz-linear-gradient(top, #9356dc 0%, #ff79da 100%);
+  background: -webkit-linear-gradient(top, #9356dc 0%, #ff79da 100%);
   transition: 1s;
   opacity: 1;
   -webkit-transition: 1s;
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
 }
 
 .menu1 {
@@ -693,8 +692,8 @@ footer .logoText {
   -moz-transform: translateX(-125%) scale(1.1);
   -ms-transform: translateX(-125%) scale(1.1);
   -o-transform: translateX(-125%) scale(1.1);
-  background: -moz-linear-gradient(top, #9356dc 0%, #ff79da 100%);
-  background: -webkit-linear-gradient(top, #e72c83 0%, #a742c6 100%);
+  background: -moz-linear-gradient(to top, #9356dc 0%, #ff79da 100%);
+  background: -webkit-linear-gradient(to top, #9356dc 0%, #ff79da 100%);
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -722,13 +721,17 @@ footer .logoText {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 23px;
+  font-size: 22px;
   transform: translateX(100%);
-  transition: all 0.5s ease;
+  transition: all 0.7s ease;
   -webkit-transform: translateX(100%);
   -moz-transform: translateX(100%);
   -ms-transform: translateX(100%);
   -o-transform: translateX(100%);
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
 }
 
 .menuLine {
@@ -744,12 +747,12 @@ footer .logoText {
   -o-border-radius: 25px;
 }
 .menuLine:hover .price {
-  padding-right: 65px;
-  transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  -ms-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
+  padding-right: 85px;
+  transition: all ease 1s;
+  -webkit-transition: all ease 1s;
+  -moz-transition: all ease 1s;
+  -ms-transition: all ease 1s;
+  -o-transition: all ease 1s;
 }
 .menuLine:hover .check {
   transform: translateX(0%);
@@ -782,6 +785,7 @@ footer .logoText {
   white-space: nowrap;
   overflow: hidden;
   transition: all 0.5s ease;
+  padding-right: 70px;
 }
 
 body {
@@ -792,6 +796,115 @@ body a {
 }
 body ul {
   list-style: none;
+}
+
+.loader2 {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 5px solid black;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-top-color: #9356dc;
+  border-bottom-color: #99e2d0;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  animation: circle 3s linear infinite;
+  -webkit-animation: circle 3s linear infinite;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-animation-name: loader;
+  animation-name: loader;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.loader .lettre {
+  color: #9356dc;
+  font-size: 55px;
+  letter-spacing: 10px;
+  animation: flash 3s linear infinite;
+  -webkit-animation: flash 3s linear infinite;
+}
+.loader .lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.loader .lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loader .lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.loader .lettre:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.loader .lettre:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.loader .lettre:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.loader .lettre:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+@keyframes flash {
+  0% {
+    text-shadow: 0 0 7px #9356dc;
+  }
+  50% {
+    color: #99e2d0;
+    text-shadow: 0 0 7px #99e2d0;
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    transform: scale(0.8) rotateZ(-360deg);
+    -webkit-transform: scale(0.8) rotateZ(-360deg);
+    -moz-transform: scale(0.8) rotateZ(-360deg);
+    -ms-transform: scale(0.8) rotateZ(-360deg);
+    -o-transform: scale(0.8) rotateZ(-360deg);
+  }
+  30% {
+    transform: scale(1.2) rotateZ(360deg);
+    -webkit-transform: scale(1.2) rotateZ(360deg);
+    -moz-transform: scale(1.2) rotateZ(360deg);
+    -ms-transform: scale(1.2) rotateZ(360deg);
+    -o-transform: scale(1.2) rotateZ(360deg);
+  }
+  80% {
+    transform: scale(1) rotateZ(-360deg);
+    -webkit-transform: scale(1) rotateZ(-360deg);
+    -moz-transform: scale(1) rotateZ(-360deg);
+    -ms-transform: scale(1) rotateZ(-360deg);
+    -o-transform: scale(1) rotateZ(-360deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

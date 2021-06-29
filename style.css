@@ -493,7 +493,7 @@ footer .logoText {
 }
 .heartIndex .fas {
   transform: translateX(125%) scale(1.1);
-  opacity: 0;
+  color: transparent;
   transition: 0.5s;
   -webkit-transition: 0.5s;
   -moz-transition: 0.5s;
@@ -505,19 +505,17 @@ footer .logoText {
   -o-transform: translateX(125%) scale(1.1);
 }
 .heartIndex .fas:hover {
-  color: transparent;
   background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
   background: -moz-linear-gradient(top, #9356dc 0%, #ff79da 100%);
   background: -webkit-linear-gradient(top, #9356dc 0%, #ff79da 100%);
   transition: 1s;
-  opacity: 1;
   -webkit-transition: 1s;
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
+  background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  background-clip: text;
 }
 
 .menu1 {
@@ -798,7 +796,22 @@ body ul {
   list-style: none;
 }
 
-.loader2 {
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  -webkit-animation-name: loader;
+  animation-name: loader;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.loader .loader2 {
   display: flex;
   position: fixed;
   justify-content: center;
@@ -817,22 +830,6 @@ body ul {
   border-right-color: transparent;
   animation: circle 3s linear infinite;
   -webkit-animation: circle 3s linear infinite;
-}
-
-.loader {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: white;
-  -webkit-animation-name: loader;
-  animation-name: loader;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
 }
 .loader .lettre {
   color: #9356dc;

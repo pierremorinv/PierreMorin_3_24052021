@@ -146,17 +146,12 @@
     -o-transform: translateX(125%) scale(1.1);
 
     &:hover {
-      background: linear-gradient(to bottom, $Primary 0%, $Secondary 100%);
-      background: -moz-linear-gradient(top, $Primary 0%, $Secondary 100%);
-      background: -webkit-linear-gradient(top, $Primary 0%, $Secondary 100%);
+      color: $Primary;
       transition: 1s;
       -webkit-transition: 1s;
       -moz-transition: 1s;
       -ms-transition: 1s;
       -o-transition: 1s;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
     }
   }
 }
@@ -229,7 +224,6 @@
   }
   .fas {
     transform: translateX(-125%) scale(1.1);
-    color: $Primary;
     opacity: 0;
     transition: 1s;
     -webkit-transition: 1s;
@@ -240,14 +234,7 @@
     -moz-transform: translateX(-125%) scale(1.1);
     -ms-transform: translateX(-125%) scale(1.1);
     -o-transform: translateX(-125%) scale(1.1);
-    background: -moz-linear-gradient(to top, $Primary 0%, $Secondary 100%);
-    background: -webkit-linear-gradient(to top, $Primary 0%, $Secondary 100%);
-    background: linear-gradient(to bottom, $Primary 0%, $Secondary 100%);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+    color: $Primary;
     &:hover {
       transition: 1s;
       opacity: 1;

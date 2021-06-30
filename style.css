@@ -506,17 +506,12 @@ footer .logoText {
   -o-transform: translateX(125%) scale(1.1);
 }
 .heartIndex .fas:hover {
-  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
-  background: -moz-linear-gradient(top, #9356dc 0%, #ff79da 100%);
-  background: -webkit-linear-gradient(top, #9356dc 0%, #ff79da 100%);
+  color: #9356dc;
   transition: 1s;
   -webkit-transition: 1s;
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
 }
 
 .menu1 {
@@ -680,7 +675,6 @@ footer .logoText {
 }
 .MainMenu .MenuSection .heart-menu .full-heart-menu .fas {
   transform: translateX(-125%) scale(1.1);
-  color: #9356dc;
   opacity: 0;
   transition: 1s;
   -webkit-transition: 1s;
@@ -691,14 +685,7 @@ footer .logoText {
   -moz-transform: translateX(-125%) scale(1.1);
   -ms-transform: translateX(-125%) scale(1.1);
   -o-transform: translateX(-125%) scale(1.1);
-  background: -moz-linear-gradient(to top, #9356dc 0%, #ff79da 100%);
-  background: -webkit-linear-gradient(to top, #9356dc 0%, #ff79da 100%);
-  background: linear-gradient(to bottom, #9356dc 0%, #ff79da 100%);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
+  color: #9356dc;
 }
 .MainMenu .MenuSection .heart-menu .full-heart-menu .fas:hover {
   transition: 1s;

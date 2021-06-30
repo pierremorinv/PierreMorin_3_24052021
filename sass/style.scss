@@ -6,8 +6,21 @@
 @import "./Directory/Components/button";
 @import "./Directory/Pages/main-index";
 @import "./Directory/Pages/main-menu";
+main {
+  animation: main-opacity 2.5s linear;
+  -webkit-animation: main-opacity 2.5s linear;
+}
+@keyframes main-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .loader {
-  z-index: 1;
+  z-index: -1;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,8 +30,8 @@
   background-color: white;
   -webkit-animation-name: loader;
   animation-name: loader;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   .loader2 {
@@ -46,8 +59,8 @@
     color: $Primary;
     font-size: 55px;
     letter-spacing: 10px;
-    animation: flash 3s linear infinite;
-    -webkit-animation: flash 3s linear infinite;
+    animation: flash 2.5s linear infinite;
+    -webkit-animation: flash 2.5s linear infinite;
     &:nth-child(1) {
       animation-delay: 0.1s;
     }
@@ -75,7 +88,7 @@
   0% {
     text-shadow: 0 0 7px $Primary;
   }
-  50% {
+  15% {
     color: $Green;
     text-shadow: 0 0 7px $Green;
   }

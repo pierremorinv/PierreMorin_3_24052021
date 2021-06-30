@@ -11,12 +11,16 @@
   -o-border-radius: 25px;
 
   &:hover .price {
-    padding-right: 85px;
-    transition: all ease-out 1s;
-    -webkit-transition: all ease-out 1s;
-    -moz-transition: all ease-out 1s;
-    -ms-transition: all ease-out 1s;
-    -o-transition: all ease-out 1s;
+    animation-fill-mode: both;
+    margin-right: 85px;
+    transition: all ease-out 0.7s;
+    -webkit-transition: all ease-out 0.7s;
+    -moz-transition: all ease-out 0.7s;
+    -ms-transition: all ease-out 0.7s;
+    -o-transition: all ease-out 0.7s;
+    &::after {
+      transition-delay: 1s;
+    }
   }
   &:hover .check {
     transform: translateX(0%);
@@ -54,15 +58,20 @@
   }
 }
 .menuLine-text {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-right: 3%;
+  margin-right: 4%;
 
   .description {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
   }
 
   .price {
@@ -78,7 +87,7 @@
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
-  -webkit-box-shadow: 5px 5px 15px 3px $Primary;
+  -webkit-box-shadow: 5px 3px 5px 3px $Primary;
   box-shadow: 5px 3px 5px 3px $Primary;
   background: rgb(255, 121, 218);
   background: linear-gradient(
@@ -88,7 +97,7 @@
   );
 
   &:hover {
-    -webkit-box-shadow: 5px 5px 15px 3px $Primary;
+    -webkit-box-shadow: 3px 5px 15px 1px $Primary;
     box-shadow: 5px 3px 15px 3px $Primary;
     background: rgb(255, 121, 218);
     background: linear-gradient(
@@ -106,7 +115,7 @@
   .fullHeartI {
     margin-right: 5%;
     transform: scale(1.3);
-    display: block;
+
     -webkit-transform: scale(1.3);
     -moz-transform: scale(1.3);
     -ms-transform: scale(1.3);
@@ -114,8 +123,6 @@
   }
 
   .far {
-    opacity: 1;
-
     &:hover {
       transition: 0.5s;
       opacity: 0;

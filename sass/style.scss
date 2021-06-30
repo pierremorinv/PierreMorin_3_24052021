@@ -6,18 +6,12 @@
 @import "./Directory/Components/button";
 @import "./Directory/Pages/main-index";
 @import "./Directory/Pages/main-menu";
+@import "./Directory/Utils/animations";
 main {
   animation: main-opacity 2.5s linear;
   -webkit-animation: main-opacity 2.5s linear;
 }
-@keyframes main-opacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
+
 .loader {
   z-index: -1;
 
@@ -84,53 +78,7 @@ main {
     }
   }
 }
-@keyframes flash {
-  0% {
-    text-shadow: 0 0 7px $Primary;
-  }
-  15% {
-    color: $Green;
-    text-shadow: 0 0 7px $Green;
-  }
 
-  100% {
-  }
-}
-
-@keyframes loader {
-  0% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 0.8;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes circle {
-  0% {
-    transform: scale(0.8) rotateZ(-360deg);
-    -webkit-transform: scale(0.8) rotateZ(-360deg);
-    -moz-transform: scale(0.8) rotateZ(-360deg);
-    -ms-transform: scale(0.8) rotateZ(-360deg);
-    -o-transform: scale(0.8) rotateZ(-360deg);
-  }
-  30% {
-    transform: scale(1.2) rotateZ(360deg);
-    -webkit-transform: scale(1.2) rotateZ(360deg);
-    -moz-transform: scale(1.2) rotateZ(360deg);
-    -ms-transform: scale(1.2) rotateZ(360deg);
-    -o-transform: scale(1.2) rotateZ(360deg);
-  }
-  80% {
-    transform: scale(1) rotateZ(-360deg);
-    -webkit-transform: scale(1) rotateZ(-360deg);
-    -moz-transform: scale(1) rotateZ(-360deg);
-    -ms-transform: scale(1) rotateZ(-360deg);
-    -o-transform: scale(1) rotateZ(-360deg);
-  }
-}
 body {
   font-family: "Roboto-Regular", sans-serif;
   a {

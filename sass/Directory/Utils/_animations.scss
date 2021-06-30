@@ -1,0 +1,82 @@
+@keyframes main-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    text-shadow: 0 0 7px $Primary;
+  }
+  15% {
+    color: $Green;
+    text-shadow: 0 0 7px $Green;
+  }
+
+  100% {
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes circle {
+  0% {
+    transform: scale(0.8) rotateZ(-360deg);
+    -webkit-transform: scale(0.8) rotateZ(-360deg);
+    -moz-transform: scale(0.8) rotateZ(-360deg);
+    -ms-transform: scale(0.8) rotateZ(-360deg);
+    -o-transform: scale(0.8) rotateZ(-360deg);
+  }
+  30% {
+    transform: scale(1.2) rotateZ(360deg);
+    -webkit-transform: scale(1.2) rotateZ(360deg);
+    -moz-transform: scale(1.2) rotateZ(360deg);
+    -ms-transform: scale(1.2) rotateZ(360deg);
+    -o-transform: scale(1.2) rotateZ(360deg);
+  }
+  80% {
+    transform: scale(1) rotateZ(-360deg);
+    -webkit-transform: scale(1) rotateZ(-360deg);
+    -moz-transform: scale(1) rotateZ(-360deg);
+    -ms-transform: scale(1) rotateZ(-360deg);
+    -o-transform: scale(1) rotateZ(-360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

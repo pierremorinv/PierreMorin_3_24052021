@@ -7,10 +7,6 @@
 @import "./Directory/Pages/main-index";
 @import "./Directory/Pages/main-menu";
 @import "./Directory/Utils/animations";
-main {
-  animation: main-opacity 2.5s linear;
-  -webkit-animation: main-opacity 2.5s linear;
-}
 
 .loader {
   z-index: -1;

@@ -1,3 +1,4 @@
+// ****************************Menu Part **********************//
 .HeaderMenu {
   @include desktop-tablet-only {
     margin: 0%;
@@ -38,6 +39,7 @@
     }
   }
 }
+// ****************************Index Part **********************//
 .logo-index {
   text-align: center;
   font-family: "Shrikhand-Regular", "sans-serif";

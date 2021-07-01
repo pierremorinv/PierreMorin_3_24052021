@@ -152,7 +152,7 @@
       }
     }
     .fas {
-      color: transparent;
+      opacity: 0;
       transform: scale(1.1);
       -webkit-transform: scale(1.1);
       -moz-transform: scale(1.1);
@@ -217,12 +217,12 @@
   position: absolute;
   bottom: 25%;
   right: 20px;
-  transform: scale(1.3);
+  transform: scale(1.4);
   display: block;
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  -o-transform: scale(1.3);
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
   &:hover .far {
     transition: 0.5s;
     opacity: 0;

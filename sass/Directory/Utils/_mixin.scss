@@ -11,16 +11,13 @@
   -o-border-radius: 25px;
 
   &:hover .price {
-    animation-fill-mode: both;
+    animation-fill-mode: backwards;
     margin-right: 85px;
     transition: all ease-out 0.7s;
     -webkit-transition: all ease-out 0.7s;
     -moz-transition: all ease-out 0.7s;
     -ms-transition: all ease-out 0.7s;
     -o-transition: all ease-out 0.7s;
-    &::after {
-      transition-delay: 1s;
-    }
   }
   &:hover .check {
     transform: translateX(0%);

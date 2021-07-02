@@ -1,3 +1,5 @@
+////. animation of opacity on index  ./////
+
 @keyframes main-opacity {
   0% {
     opacity: 0;
@@ -6,11 +8,12 @@
     opacity: 1;
   }
 }
+////. animation change colors of letters  ./////
 @keyframes flash {
   0% {
     text-shadow: 0 0 7px $Primary;
   }
-  15% {
+  25% {
     color: $Green;
     text-shadow: 0 0 7px $Green;
   }
@@ -18,7 +21,7 @@
   100% {
   }
 }
-
+////. animation of loading opacity  ./////
 @keyframes loader {
   0% {
     opacity: 1;
@@ -30,6 +33,7 @@
     opacity: 0;
   }
 }
+////. animation of loader spinner ./////
 @keyframes circle {
   0% {
     transform: scale(0.8) rotateZ(-360deg);
@@ -52,35 +56,21 @@
     -ms-transform: scale(1) rotateZ(-360deg);
     -o-transform: scale(1) rotateZ(-360deg);
   }
-}
+} ////. animation of fade in ./////
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
+  }
+  70% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
+////. animation of heartbeat ./////
 @keyframes heartbeat {
   0% {
     transform: scale(1);

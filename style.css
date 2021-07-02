@@ -684,8 +684,8 @@ footer .logoText {
 .menu1 {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -698,8 +698,8 @@ footer .logoText {
 .menu2 {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -712,8 +712,8 @@ footer .logoText {
 .menu3 {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  -webkit-animation-duration: 4.5s;
-  animation-duration: 4.5s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -856,16 +856,13 @@ footer .logoText {
   -o-border-radius: 25px;
 }
 .menuLine:hover .price {
-  animation-fill-mode: both;
+  animation-fill-mode: backwards;
   margin-right: 85px;
   transition: all ease-out 0.7s;
   -webkit-transition: all ease-out 0.7s;
   -moz-transition: all ease-out 0.7s;
   -ms-transition: all ease-out 0.7s;
   -o-transition: all ease-out 0.7s;
-}
-.menuLine:hover .price::after {
-  transition-delay: 1s;
 }
 .menuLine:hover .check {
   transform: translateX(0%);
@@ -913,7 +910,7 @@ footer .logoText {
   0% {
     text-shadow: 0 0 7px #9356dc;
   }
-  15% {
+  25% {
     color: #99e2d0;
     text-shadow: 0 0 7px #99e2d0;
   }
@@ -956,21 +953,8 @@ footer .logoText {
   0% {
     opacity: 0;
   }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
+  70% {
+    opacity: 0.5;
   }
   100% {
     opacity: 1;

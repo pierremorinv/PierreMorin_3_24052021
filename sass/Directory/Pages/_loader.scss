@@ -1,4 +1,3 @@
-//. loader lettre .//
 .loader {
   z-index: -1;
   display: flex;
@@ -33,10 +32,10 @@
     border-bottom-color: $Green;
     border-left-color: transparent;
     border-right-color: transparent;
-    animation: circle 3s linear infinite;
-    -webkit-animation: circle 3s linear infinite;
+    animation: circle 2.5s linear infinite;
+    -webkit-animation: circle 2.5s linear infinite;
   }
-
+  //. loader lettre .//
   .lettre {
     color: $Primary;
     font-size: 55px;

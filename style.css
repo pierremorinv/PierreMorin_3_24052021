@@ -17,7 +17,7 @@
 .menuLine-text .price {
   overflow: hidden;
   font-weight: bold;
-  padding-right: 5px;
+  padding-right: 8px;
 }
 
 @font-face {
@@ -834,7 +834,7 @@ footer .logoText {
   0% {
     text-shadow: 0 0 7px #9356dc;
   }
-  25% {
+  35% {
     color: #99e2d0;
     text-shadow: 0 0 7px #99e2d0;
   }

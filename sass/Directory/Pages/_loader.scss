@@ -1,6 +1,6 @@
+//. loader lettre .//
 .loader {
   z-index: -1;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +14,9 @@
   animation-duration: 2.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  .loader2 {
+
+  //. loader logo .//
+  .loader-spinner {
     display: flex;
     justify-content: center;
     align-items: center;

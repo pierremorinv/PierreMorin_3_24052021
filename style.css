@@ -135,7 +135,11 @@
 .headerIndex .header-index-text .header-index-top {
   margin: 0%;
   background: #dcdadd;
-  background: linear-gradient(0deg, #dcdadd 93%, rgba(131, 130, 131, 0.64) 100%);
+  background: linear-gradient(
+    0deg,
+    #dcdadd 93%,
+    rgba(131, 130, 131, 0.64) 100%
+  );
 }
 .headerIndex .header-index-text .header-index-top .marginHeaderText {
   font-weight: bold;
@@ -160,7 +164,11 @@
   -webkit-box-shadow: 3px 5px 15px 1px #9356dc;
   box-shadow: 5px 3px 15px 3px #9356dc;
   background: #ff79da;
-  background: linear-gradient(127deg, rgba(255, 121, 218, 0.8) 30%, rgba(147, 86, 220, 0.8) 100%);
+  background: linear-gradient(
+    127deg,
+    rgba(255, 121, 218, 0.8) 30%,
+    rgba(147, 86, 220, 0.8) 100%
+  );
 }
 
 @media (min-width: 599px) {
@@ -291,7 +299,11 @@ footer .logoText {
   -webkit-box-shadow: 3px 5px 15px 1px #9356dc;
   box-shadow: 5px 3px 15px 3px #9356dc;
   background: #ff79da;
-  background: linear-gradient(127deg, rgba(255, 121, 218, 0.8) 30%, rgba(147, 86, 220, 0.8) 100%);
+  background: linear-gradient(
+    127deg,
+    rgba(255, 121, 218, 0.8) 30%,
+    rgba(147, 86, 220, 0.8) 100%
+  );
 }
 .btn-order p {
   text-align: center;
@@ -780,14 +792,6 @@ footer .logoText {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
 }
-.menuLine:hover .price {
-  margin-right: 80px;
-  transition: all ease-out 0.7s;
-  -webkit-transition: all ease-out 0.7s;
-  -moz-transition: all ease-out 0.7s;
-  -ms-transition: all ease-out 0.7s;
-  -o-transition: all ease-out 0.7s;
-}
 .menuLine:hover .check {
   transform: translateX(0%);
 }
@@ -804,6 +808,14 @@ footer .logoText {
   -moz-transition: all 1.2s ease;
   -ms-transition: all 1.2s ease;
   -o-transition: all 1.2s ease;
+}
+.menuLine:hover .price {
+  margin-right: 80px;
+  transition: all ease-out 0.7s;
+  -webkit-transition: all ease-out 0.7s;
+  -moz-transition: all ease-out 0.7s;
+  -ms-transition: all ease-out 0.7s;
+  -o-transition: all ease-out 0.7s;
 }
 .menuLine p {
   display: inline-block;

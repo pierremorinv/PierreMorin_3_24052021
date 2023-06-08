@@ -251,6 +251,7 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: end;
+    align-items: flex-end;
   }
 }
 footer ul {
@@ -289,6 +290,7 @@ footer .logoText {
   color: white;
   margin-right: 2%;
   margin-left: 3%;
+  margin-top: 0%;
 }
 
 .btn-order a {

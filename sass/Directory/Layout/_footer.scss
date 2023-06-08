@@ -6,6 +6,7 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     justify-content: end;
+    align-items: flex-end;
   }
 
   ul {
@@ -44,5 +45,6 @@ footer {
     color: white;
     margin-right: 2%;
     margin-left: 3%;
+    margin-top: 0%;
   }
 }
